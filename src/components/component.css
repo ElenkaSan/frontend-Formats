@@ -1,3 +1,30 @@
+/* .dropdown-title,
+.dropdown-title:hover {
+  color: #ffffff; 
+}
+
+.navL {
+  background-color: #f8f9fa;
+} */
+
+.navL .navbar-brand,
+.navL .navbar-nav .nav-link,
+.navL .nav-dropdown .dropdown-toggle {
+  color: #e682ff; /* Set the desired text color */
+}
+
+.navL .navbar-brand:hover,
+.navL .navbar-nav:hover .nav-link:hover,
+.navL .nav-dropdown:hover .dropdown-toggle:hover {
+  color: #e682ff; /* Set the desired text color */
+}
+
+/* .navL .nav-dropdown .dropdown-toggle:hover,
+.navL .nav-dropdown .dropdown-toggle:focus {
+  color: #fff; 
+} */
+
+
 .navbar-content {
     margin-top: 100px; /* height of navbar */
   }

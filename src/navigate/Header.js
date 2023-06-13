@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../img/logo.png';
 import { useNavigate } from "react-router-dom";
+import "../components/component.css";
 
 const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
     const navigate = useNavigate();
@@ -18,9 +19,10 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
     
     return ( 
         <> {['lg'].map((expand) => (
-        <Navbar key={expand} bg="primary" variant="dark" expand={expand} className="navL fixed-top mb-3">
+        <Navbar key={expand} expand={expand} className="navL fixed-top mb-3 bg-primary" >
           <Container fluid>
-            <Navbar.Brand className="text-success" href="/"><p className="m-2"> <img src={logo} alt="logo" style={{ maxWidth: "50px"}} /></p>
+            <Navbar.Brand className="text-success" href="/">
+              <p className="m-2"> <img src={logo} alt="logo" style={{ maxWidth: "50px"}} /></p>
               Форматы
             </Navbar.Brand>
             <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode" data-bs-toggle="mode">
@@ -31,7 +33,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="bg-success shadow-none bg-body-tertiary rounded"/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              ariaLabelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
               <Offcanvas.Header className="bg-danger" closeButton>
@@ -40,8 +42,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body className="bg-primary text-light">
-                <Nav className="justify-content-end flex-grow-1 pe-3 bg-primary text-light"  style={{ color: "#fff" }}>
-                  
+                <Nav className="justify-content-end flex-grow-1 pe-3 text-light"  >
                   <NavDropdown 
                     title="О нас"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
