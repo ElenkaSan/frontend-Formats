@@ -12,8 +12,8 @@ const Promo = () => {
 
     return ( 
     <div>
-       <main>
-         <section className="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+       <main class="page-wrapper">
+         <section className="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5 my-5">
          <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
          <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i className="ai-home"></i></a>
          </div>
@@ -40,38 +40,38 @@ const Promo = () => {
           </h2>
            <div className="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
              <div className="ps-md-4 ps-lg-0">
-          <h5 className="pb-3 mb-3 mb-xl-4">При ежемесячной оплате абонементов:  </h5>
+          <h5 className="pb-3 mb-3 mb-xl-4 fs-lg">При ежемесячной оплате абонементов:  </h5>
           <div className="row row-cols-2 g-4 pb-2 pb-xl-0 mb-4 mb-xl-5">
             <div className="col"><i className="ai-emoji-smile d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">В подарок одно занятие</h3>
-              <p className="fs-sm mb-0">При выборе 2-х направлений с интенсивностью 8 раз в месяц - в подарок по 1 занятию на каждое из направлений дополнительно к основным занятиям в следующем месяце.</p>
+              <h3 className="h6 mb-2 fs-lg">В подарок одно занятие</h3>
+              <p className="mb-0 fs-lg">При выборе 2-х направлений с интенсивностью 8 раз в месяц - в подарок по 1 занятию на каждое из направлений дополнительно к основным занятиям в следующем месяце.</p>
             </div>
             <div className="col"><i className="ai-emoji-happy d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">В подарок три занятия</h3>
-              <p className="fs-sm mb-0">При выборе 3-х направлений по 8 занятий в подарок 3 занятия (на каждые из направлений по 1 подарку), можно потратить дополнительно к основным занятиям в следующем месяце.</p>
+              <h3 className="h6 mb-2 fs-lg">В подарок три занятия</h3>
+              <p className="mb-0 fs-lg">При выборе 3-х направлений по 8 занятий в подарок 3 занятия (на каждые из направлений по 1 подарку), можно потратить дополнительно к основным занятиям в следующем месяце.</p>
             </div>
             <div className="col"><i className="ai-gift d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">В подарок одно дополнительное занятие</h3>
-              <p className="fs-sm mb-0">При выборе 1 направления на 8 занятий и два других по 4 занятия в подарок 1 дополнительное занятие на выбор из тех, что посещает ребенок.</p>
+              <h3 className="h6 mb-2 fs-lg">В подарок одно дополнительное занятие</h3>
+              <p className="mb-0 fs-lg">При выборе 1 направления на 8 занятий и два других по 4 занятия в подарок 1 дополнительное занятие на выбор из тех, что посещает ребенок.</p>
             </div>
             </div>
-            <p className="pb-3 mb-3 mb-xl-4">Подарками можно воспользоваться на следующий месяц - дополнительно, при этом в месяце использования подарков другие акции не действуют. 
+            <p className="pb-3 mb-3 mb-xl-4 fs-lg">Подарками можно воспользоваться на следующий месяц - дополнительно, при этом в месяце использования подарков другие акции не действуют. 
             <br/> Месяц, в котором вы уже воспользовались подарками, не считается месяцем для накопления следующих подарков. Если вы не воспользовались подарками на следующий месяц они сгорают. Полезные каникулы не входят в акции.  </p>
             </div>
             </div>
             <div className="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
-            <h5 className="pb-3 mb-3 mb-xl-4">При оплате абонементов от 3-х месяцев и выше:</h5>
+            <h5 className="pb-3 mb-3 mb-xl-4 fs-lg">При оплате абонементов от 3-х месяцев и выше:</h5>
           <div className="row row-cols-2 g-4 pb-2 pb-xl-0 mb-4 mb-xl-5">
             <div className="col"><i className="ai-emoji-happy d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">В подарок три занятия</h3>
-              <p className="fs-sm mb-0">При оплате 1 направления за 3 месяца в подарок 3 занятия (групповые/индивидуальные навыбор).</p>
+              <h3 className="h6 mb-2 fs-lg">В подарок три занятия</h3>
+              <p className="fs-lg mb-0">При оплате 1 направления за 3 месяца в подарок 3 занятия (групповые/индивидуальные навыбор).</p>
             </div>
             <div className="col"><i className="ai-emoji-surprise d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">В подарок шесть занятий</h3>
-              <p className="fs-sm mb-0">При оплате за 5 месяцев в подарок 6 занятий (групповые/индивидуальные на выбор). </p>
+              <h3 className="h6 mb-2 fs-lg">В подарок шесть занятий</h3>
+              <p className="mb-0 fs-lg">При оплате за 5 месяцев в подарок 6 занятий (групповые/индивидуальные на выбор). </p>
             </div>
             </div>
-              <p>Подарками можно воспользоваться на следующий месяц после окончания оплаты за период 3-5 месяцев.</p>
+              <p className="fs-lg">Подарками можно воспользоваться на следующий месяц после окончания оплаты за период 3-5 месяцев.</p>
         </div>
  
     </div>
@@ -82,7 +82,7 @@ const Promo = () => {
        <div className="row align-items-xlg-center">
          <div className="ps-md-4 ps-lg-0">
           <h2 className="mb-xl-4 text-center">СЕРТИФИКАТЫ</h2>
-          <p className="pb-3 mb-3 mb-xl-4"> В нашем Центре развития «Форматы» 1 раз в квартал проходит День открытых дверей(мастер-классы, конкурсы, участие с родителями, сладкие подарки). 
+          <p className="pb-3 mb-3 mb-xl-4 fs-lg"> В нашем Центре развития «Форматы» 1 раз в квартал проходит День открытых дверей(мастер-классы, конкурсы, участие с родителями, сладкие подарки). 
           На таких мероприятиях  выможете выиграть сертификаты номиналом, например, 1000, 2000, 3000 рублей. И воспользоватьсяими уже в следующем месяце. </p>
           <div className="row align-items-center py-4 py-xl-5 my-2">
           <div className="col-md-6 pb-2 mb-4 mb-md-0">
@@ -103,10 +103,10 @@ const Promo = () => {
       <div className="tab-pane fade show" id="promocode" role="tabpanel">
        <div className="row align-items-xlg-center">
           <h2 className="mb-xl-4 text-center">ПРОМОКОД</h2>
-          <p className="pb-3 mb-3 mb-xl-4">Каждый месяц у администратора есть Новый ПРОМОКОД на подарок или сертификат от Центра развития «Форматы». 
+          <p className="pb-3 mb-3 mb-xl-4 fs-lg">Каждый месяц у администратора есть Новый ПРОМОКОД на подарок или сертификат от Центра развития «Форматы». 
           Информацию можно узнать у администратора Центра по телефону: +7 (992) 300-65-46. 
           Например, на май действует ПРОМОКОД — ЛЮБЛЮФОРМАТЫ, но необходимо соблюсти условия </p>
-          <div className="offset-lg-4">
+          <div className="offset-lg-4 fs-lg">
           <ol>
             <li>Подпишись на группу <i className="ai-vk h2 text-primary fw-normal pb-2 mb-1"/> и <i className="ai-instagram h2 text-primary fw-normal pb-2 mb-1"/>  </li>
             <li>Поставь лайк <i className="ai-like h2 text-primary fw-normal pb-2 mb-1"/> и классный комментарий;</li>
@@ -122,12 +122,12 @@ const Promo = () => {
        <div className="row align-items-xlg-center">
          {/* <div className="ps-md-4 ps-lg-0"> */}
           <h2 className="mb-xl-4 text-center">АКЦИИ</h2>
-          <h4 className="text-center">Наши акции на Летние смены:</h4>
-          <p className="text-center">"Приведи друга" (1+1) = скидка каждому на абонемент 15% <br/> При посещении двух смен – скидка на вторую смену для ребенка 25%. Скидки по акции не суммируются</p>
+          <h4 className="text-center fs-lg">Наши акции на Летние смены:</h4>
+          <p className="text-center fs-lg">"Приведи друга" (1+1) = скидка каждому на абонемент 15% <br/> При посещении двух смен – скидка на вторую смену для ребенка 25%. Скидки по акции не суммируются</p>
            <div className="col-md-6 col-lg-5 col-xl-4 offset-lg-1">  
              <div className="ps-md-4 ps-lg-0">          
-            <div className="col"><i className="ai-emoji-smile d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">Акция на Полезные каникулы SUPER ЛЕТО
+            <div className="col fs-lg"><i className="ai-emoji-smile d-block h2 text-primary fw-normal pb-2 mb-1"></i>
+              <h3 className="mb-2 fs-lg">Акция на Полезные каникулы SUPER ЛЕТО
               <br/>
               Смены для детей до 11 лет: 
               </h3>
@@ -143,10 +143,10 @@ const Promo = () => {
             </div>
             <div className="col-md-6 col-lg-5 col-xl-4 offset-lg-1">  
              <div className="ps-md-4 ps-lg-0">          
-            <div className="col"><i className="ai-emoji-smile d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-              <h3 className="h6 mb-2">Акция на Полезные каникулы STARтаперы
+            <div className="col fs-lg"><i className="ai-emoji-smile d-block h2 text-primary fw-normal pb-2 mb-1"></i>
+              <h3 className="mb-2 fs-lg">Акция на Полезные каникулы STARтапер
               <br/>
-             Смены на полдня для подростков 12-17 лет:
+              Смены на полдня для подростков 12-17 лет:
               </h3>
               <ol>
               <li>19.06.2023-30.06.2023</li>

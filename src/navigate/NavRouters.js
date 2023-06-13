@@ -21,6 +21,7 @@ import Music from "../components/Music";
 import Prof from "../components/Prof";
 import Blog from "../components/Blog";
 import Pay from "../components/Pay";
+import Womenclub from "../components/Womenclub";
 // import AuthVerify from "./common/auth-verify";
 // import EventBus from "./common/EventBus";
 
@@ -56,7 +57,7 @@ const NavRrouters = () => {
         <Route path="/family" element={<Home />} />
         <Route path="/personal" element={<Home />} />
         <Route path="/manage" element={<Home />} />
-        <Route path="/women" element={<Home />} />
+        <Route path="/women" element={<Womenclub />} />
         <Route path="/niceage" element={<Home />} />
         <Route path="/travel" element={<Home />} />
 

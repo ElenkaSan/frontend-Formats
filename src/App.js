@@ -239,45 +239,6 @@ class App extends Component {
         <div className="App">
           <Header logout={this.logOut} />
           < NavRrouters />
-          {/* <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/user" element={<BoardUser />} />
-            <Route path="/mod" element={<BoardModerator />} />
-            <Route path="/admin" element={<BoardAdmin />} />
-
-            <Route path="/aboutus" element={<Aboutus />} />
-            <Route path="/programs" element={<Home />} />
-            <Route path="/contact" element={<Home />} />
-
-            <Route path="/english" element={<Home />} />
-            <Route path="/class" element={<Home />} />
-            <Route path="/chest" element={<Home />} />
-            <Route path="/music" element={<Home />} />
-            <Route path="/prof" element={<Home />} />
-            <Route path="/vacation" element={<Home />} />
-
-            <Route path="/family" element={<Home />} />
-            <Route path="/personal" element={<Home />} />
-            <Route path="/manage" element={<Home />} />
-            <Route path="/women" element={<Home />} />
-            <Route path="/niceage" element={<Home />} />
-            <Route path="/travel" element={<Home />} />
-
-            <Route path="/group" element={<Home />} />
-            <Route path="/team" element={<Home />} />
-            <Route path="/corporate" element={<Home />} />
-            <Route path="/testing" element={<Home />} />
-            <Route path="/business" element={<Home />} />
-
-            <Route path="/promo" element={<Promo />} />
-            <Route path="/publications" element={<Home />} />
-            <Route path="/photos" element={<Home />} />
-          </Routes> */}
-
           <Footer/>
         </div>
        

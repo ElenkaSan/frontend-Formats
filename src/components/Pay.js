@@ -6,7 +6,7 @@ import paycode from "../img/paycode.png"
 const Pay = () => {
   return (
     <div>
-    <main class="page-wrapper">
+    <main className="page-wrapper">
         <section className="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5 my-5"> <br/>
         <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
          <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i className="ai-home"></i></a>
@@ -14,9 +14,9 @@ const Pay = () => {
         <h1 className="display-3 pb-2 mb-sm-4 mb-lg-5">Реквизиты компании и варианты оплаты:</h1>
         <div className="container">
           <div className="row">
-            <div className="col-md-6"> 
-              <ol className="fs-lg"> 
+            <div className="col-md-6 p-5"> 
               <p className="h4">В нашем центре существует несколько вариантов оплаты услуг:</p>
+              <ol className="fs-lg"> 
                 <li>Возможность оплаты по QR- коду(Система быстрых платежей от ЦБРФ). Как это сделать? 
               Открываетелюбое приложение банка в телефоне, сканируете наш QR- код ипереводите сумму 
               абонемента издоговора. </li>
