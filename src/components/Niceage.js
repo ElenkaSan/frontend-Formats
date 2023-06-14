@@ -1,5 +1,4 @@
 import React from 'react'
-import format from "../img/logo3.png";
 
 export default function Niceage() {
   return (
@@ -60,6 +59,7 @@ export default function Niceage() {
           </p>
           <div>
            <h4 className="">Ждем вас на наших мероприятиях! <br/> С собой иметь хорошее настроение и желание прекрасно провести время!</h4>
+         <br/>
           </div>
         </div>
       </section>

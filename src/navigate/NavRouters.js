@@ -23,6 +23,10 @@ import Blog from "../components/Blog";
 import Pay from "../components/Pay";
 import Womenclub from "../components/Womenclub";
 import Niceage from "../components/Niceage"
+import Travel from "../components/Travel"
+import Manage from "../components/Manage"
+import Personal from "../components/Personal"
+import Family from "../components/Family"
 // import AuthVerify from "./common/auth-verify";
 // import EventBus from "./common/EventBus";
 
@@ -55,12 +59,12 @@ const NavRrouters = () => {
         <Route path="/prof" element={<Prof />} />
         <Route path="/vacation" element={<Vacation />} />
 
-        <Route path="/family" element={<Home />} />
-        <Route path="/personal" element={<Home />} />
-        <Route path="/manage" element={<Home />} />
+        <Route path="/family" element={<Family />} />
+        <Route path="/personal" element={<Personal />} />
+        <Route path="/manage" element={<Manage />} />
         <Route path="/women" element={<Womenclub />} />
         <Route path="/niceage" element={<Niceage />} />
-        <Route path="/travel" element={<Home />} />
+        <Route path="/travel" element={<Travel />} />
 
         <Route path="/group" element={<Home />} />
         <Route path="/team" element={<Home />} />
