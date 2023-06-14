@@ -32,6 +32,7 @@ import Family from "../components/Family"
 
 // import logo from './img/logo.png';
 import "../components/component.css"
+import Englishadult from "../components/Englishadult";
 
 // import Footer from "./components/Footer"
 
@@ -65,6 +66,7 @@ const NavRrouters = () => {
         <Route path="/women" element={<Womenclub />} />
         <Route path="/niceage" element={<Niceage />} />
         <Route path="/travel" element={<Travel />} />
+        <Route path="/englishadult" element={<Englishadult />} />
 
         <Route path="/group" element={<Home />} />
         <Route path="/team" element={<Home />} />

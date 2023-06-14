@@ -90,6 +90,8 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/travel">Психологический туризм
                      </NavDropdown.Item>
+                     <NavDropdown.Item href="/englishadult">Английский язык
+                     </NavDropdown.Item>
                   </NavDropdown>
 
                   <NavDropdown
