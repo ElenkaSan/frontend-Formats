@@ -34,7 +34,7 @@ const Blog = () => {
         </div>
 
         <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
-         <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" dataBsToggle="tooltip" dataBsPlacement="left" title="Back to home"><i className="ai-home"></i></a>
+         <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" databstoggle="tooltip" dataBsPlacement="left" title="Back to home"><i className="ai-home"></i></a>
          </div>
 
       </div>

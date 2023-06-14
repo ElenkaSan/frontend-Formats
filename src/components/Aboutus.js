@@ -20,14 +20,14 @@ const Aboutus = () => {
         <div className="container pt-5 pb-sm-3 mt-5 mb-2 mb-md-3 mb-lg-4 mb-xxl-5">
           <br/>
           <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
-         <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" dataBsToggle="tooltip" dataBsPlacement="left" title="Back to home"><i className="ai-home"></i></a>
+         <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" databstoggle="tooltip" dataBsPlacement="left" title="Back to home"><i className="ai-home"></i></a>
          </div>
           <h1 className="text-center pb-3 pb-md-4 pb-lg-5 mb-lg-0 mb-xl-2 mb-xxl-4">Наша Команда</h1>
           <Col className="row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280">
             <div className="col-md-7 offset-xxl-1 mb-4 mb-md-0">
               <img className="rounded-5" src={Anna} width="700" alt="anna"/>
               </div>
-            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="ms-md-4 ms-lg-5 ms-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Основатель Учебного Центра «ФОРМАТЫ»</div>
                 <h2 className="mb-lg-4">Руководитель Учебного Центра «ФОРМАТЫ» <br/> Рублева Анна Владимировна</h2>
@@ -46,7 +46,7 @@ const Aboutus = () => {
             <div className="col-md-7 order-md-2 mb-4 mb-md-0">
               <img className="rounded-5" src={engTeach} width="700" alt="pq"/>
             </div>
-            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="me-md-4 me-lg-5 me-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">English Teacher</div>
                 <h2 className="mb-lg-4">
@@ -68,7 +68,7 @@ const Aboutus = () => {
           <Col className="row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280">
             <div className="col-md-7 offset-xxl-1 mb-4 mb-md-0"><a href="portfolio-single-v1.html">
               <img className="rounded-5" src={engTch} width="700" alt="pf"/></a></div>
-            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="ms-md-4 ms-lg-5 ms-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">English Teacher</div>
                 <h2 className="mb-lg-4">
@@ -94,7 +94,7 @@ const Aboutus = () => {
                 <img className="rounded-5" src={chest} width="700" alt="pt"/>
                 {/* </a> */}
                 </div>
-            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="me-md-4 me-lg-5 me-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Chest Club</div>
                 <h2 className="mb-lg-4">
@@ -118,7 +118,7 @@ const Aboutus = () => {
             <div className="col-md-7 offset-xxl-1 mb-4 mb-md-0">
               <img className="rounded-5" src={art} width="700" alt="ph"/>
               </div>
-            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="ms-md-4 ms-lg-5 ms-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Art Teacher</div>
                 <h2 className="mb-lg-4">
@@ -144,7 +144,7 @@ const Aboutus = () => {
             <div className="col-md-7 order-md-2 mb-4 mb-md-0">
               <img className="rounded-5" src={mang} width="700" alt="pq"/>
             </div>
-            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="me-md-4 me-lg-5 me-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Руководитель Музыкалки 2.0</div>
                 <h2 className="mb-lg-4">
@@ -156,7 +156,7 @@ const Aboutus = () => {
           <Col className="row align-items-center card-hover pb-5 mb-md-2 mb-lg-3 mb-xl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280">
             <div className="col-md-7 offset-xxl-1 mb-4 mb-md-0"><a href="portfolio-single-v1.html">
               <img className="rounded-5" src={engTch} width="700" alt="pf"/></a></div>
-            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="ms-md-4 ms-lg-5 ms-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Music Teacher</div>
                 <h2 className="mb-lg-4">
@@ -171,7 +171,7 @@ const Aboutus = () => {
             <div className="col-md-7 order-md-2 mb-4 mb-md-0">
                 <img className="rounded-5" src={chest} width="700" alt="pt"/>
             </div>
-            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4 offset-xxl-1 order-md-1" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="me-md-4 me-lg-5 me-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Music Teacher</div>
                 <h2 className="mb-lg-4">
@@ -186,7 +186,7 @@ const Aboutus = () => {
             <div className="col-md-7 offset-xxl-1 mb-4 mb-md-0">
               <img className="rounded-5" src={art} width="700" alt="ph"/>
               </div>
-            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-5 col-xl-4" dataAos="fade-up" dataAosDuration="850" dataAosOffset="180" datadisableparallaxdown="md">
               <div className="ms-md-4 ms-lg-5 ms-xxl-0" style={{maxWidth: "330px"}}>
                 <div className="text-muted mb-2">Singing Teacher</div>
                 <h2 className="mb-lg-4">

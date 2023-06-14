@@ -56,7 +56,7 @@ export default class Home extends Component {
           {/* <h3>{this.state.content}</h3> */}
         {/* </header> */}
         <main className="page-wrapper">
-         <section className="jarallax min-vh-100 py-lg-3 py-xl-4 py-xxl-5" dataJarallax dataSpeed="0.65">
+         <section className="jarallax min-vh-100 py-lg-3 py-xl-4 py-xxl-5" datajarallax dataspeed="0.65">
         <div className="jarallax-img"  style={{backgroundImage: 'url(assets/img/landing/corporate/hero-bg.jpg)'}}></div>
         <div className="container-fluid position-relative zindex-2 py-5 my-md-3 my-lg-5">
         <div className="row pb-3 pt-4 pt-sm-5">
@@ -326,7 +326,7 @@ export default class Home extends Component {
     <section className="bg-secondary py-5">
         <div className="container py-md-2 py-lg-4 my-xl-2 my-xxl-3">
         {/* Item*/}
-        <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" dataDisableParallaxDown="md">
+        <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" datadisableparallaxdown="md">
             <div className="col-md-6 col-xxl-5 offset-lg-1 offset-xl-2 offset-xxl-3 order-md-2 pb-1 pb-sm-2 pb-md-0 mb-4 mb-md-0">
             <div className="position-relative">
                 <img className="d-block rounded-1" src="assets/img/landing/corporate/team/talant.jpeg" alt="Img"/>
@@ -339,7 +339,7 @@ export default class Home extends Component {
                 </div>
             </div>
             </div>
-            <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" datadisableparallaxdown="md">
             <div className="pe-md-4 pe-lg-0">
                 <h2 className=" pb-sm-2 pb-lg-3">Успех Центра развития «Форматы»</h2>
                 <p className="fs-xl pb-3 mb-1 mb-sm-2 mb-md-3 mb-lg-4">
@@ -354,7 +354,7 @@ export default class Home extends Component {
             </div>
         </div>
         {/* Item*/}
-        <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" dataDisableParallaxDown="md">
+        <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" datadisableparallaxdown="md">
             <div className="col-md-6 col-xxl-5 offset-xl-1 offset-xxl-2 order-md-2 pb-1 pb-sm-2 pb-md-0 mb-4 mb-md-0">
             <div className="position-relative">
                 <img className="d-block rounded-1 position-relative zindex-2" src={proforent} alt="Img"/>
@@ -367,7 +367,7 @@ export default class Home extends Component {
                 </div>
             </div>
             </div>
-            <div className="col-md-6 col-xl-5 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-6 col-xl-5 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" datadisableparallaxdown="md">
             <div className="pe-md-4 pe-lg-0">
                 <h2 className="h1 pb-3 mb-2 mb-lg-3 mb-xl-4">Наш профессиональный подход к вашему личностному росту</h2>
                 <div className="row row-cols-1 row-cols-sm-2 g-4">
@@ -386,7 +386,7 @@ export default class Home extends Component {
             </div>
         </div>
         {/* Item*/}
-        <div className="row align-items-center py-3 py-sm-4 py-lg-5 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" dataDisableParallaxDown="md">
+        <div className="row align-items-center py-3 py-sm-4 py-lg-5 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" datadisableparallaxdown="md">
             <div className="col-md-6 col-xxl-5 offset-lg-1 offset-xl-2 offset-xxl-3 order-md-2 pb-1 pb-sm-2 pb-md-0 mb-4 mb-md-0">
             <div className="position-relative">
                 <img className="d-block rounded-1" src={create} alt="Img"/>
@@ -399,7 +399,7 @@ export default class Home extends Component {
                 </div>
             </div>
             </div>
-            <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" dataDisableParallaxDown="md">
+            <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" datadisableparallaxdown="md">
             <div className="pe-md-4 pe-lg-0">
                 <h2 className="h1 pb-sm-2 pb-lg-3">Полный Формат от «Форматы»</h2>
                 <p className="fs-xl mb-lg-4">Find aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
@@ -431,7 +431,7 @@ export default class Home extends Component {
                 <div className="accordion accordion-alt" id="industries">
                 <div className="accordion-item mb-n3 mb-lg-n2 mb-xl-1">
                     <h3 className="accordion-header">
-                    <button className="accordion-button" type="button" dataBsToggle="collapse" dataBsTarget="#finance" ariaExpanded="true" ariaControls="finance">
+                    <button className="accordion-button" type="button" databstoggle="collapse" dataBsTarget="#finance" ariaExpanded="true" ariaControls="finance">
                         Детские ФОРМАТЫ</button>
                     </h3>
                     <div className="accordion-collapse collapse show" id="finance" dataBsParent="#industries">
@@ -442,7 +442,7 @@ export default class Home extends Component {
                 </div>
                 <div className="accordion-item mb-n3 mb-lg-n2 mb-xl-1">
                     <h3 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" dataBsToggle="collapse" dataBsTarget="#tech" ariaExpanded="false" ariaControls="tech">
+                    <button className="accordion-button collapsed" type="button" databstoggle="collapse" dataBsTarget="#tech" ariaExpanded="false" ariaControls="tech">
                     Взрослые ФОРМАТЫ</button>
                     </h3>
                     <div className="accordion-collapse collapse" id="tech" dataBsParent="#industries">
@@ -453,7 +453,7 @@ export default class Home extends Component {
                 </div>
                 <div className="accordion-item mb-n3 mb-lg-n2 mb-xl-1">
                     <h3 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" dataBsToggle="collapse" dataBsTarget="#medicine" ariaExpanded="false" ariaControls="medicine">
+                    <button className="accordion-button collapsed" type="button" databstoggle="collapse" dataBsTarget="#medicine" ariaExpanded="false" ariaControls="medicine">
                     ФОРМАТЫ Бизнеса</button>
                     </h3>
                     <div className="accordion-collapse collapse" id="medicine" dataBsParent="#industries">
@@ -464,7 +464,7 @@ export default class Home extends Component {
                 </div>
                 {/* <div className="accordion-item mb-n3 mb-lg-n2 mb-xl-1">
                     <h3 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" dataBsToggle="collapse" dataBsTarget="#real-estate" ariaExpanded="false" ariaControls="real-estate">Real estate and catering</button>
+                    <button className="accordion-button collapsed" type="button" databstoggle="collapse" dataBsTarget="#real-estate" ariaExpanded="false" ariaControls="real-estate">Real estate and catering</button>
                     </h3>
                     <div className="accordion-collapse collapse" id="real-estate" dataBsParent="#industries">
                     <div className="accordion-body">Aenean suscipit, lacus eu sagittis pretium, quam purus aliquet velit, in vestibulum eros massa et eros. Proin sed mollis tortor. Integer non felis condimentum, gravida metus nec, mollis mauris ultrices malesuada.</div>
@@ -473,7 +473,7 @@ export default class Home extends Component {
                
                 {/* <div className="accordion-item mb-n3 mb-lg-n2 mb-xl-1">
                     <h3 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" dataBsToggle="collapse" dataBsTarget="#education" ariaExpanded="false" ariaControls="education">Educational and training</button>
+                    <button className="accordion-button collapsed" type="button" databstoggle="collapse" dataBsTarget="#education" ariaExpanded="false" ariaControls="education">Educational and training</button>
                     </h3>
                     <div className="accordion-collapse collapse" id="education" dataBsParent="#industries">
                     <div className="accordion-body">Sed sollicitudin interdum nunc ut pharetra. Proin vehicula volutpat mattis. Curabitur a ipsum leo. Praesent dapibus est ac risus maximus, sit amet placerat diam congue elit sem commodo justo scelerisque ipsum.</div>

@@ -7,6 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../img/logo.png';
 import { useNavigate } from "react-router-dom";
 import "../components/component.css";
+import { Button } from 'react-bootstrap';
 
 // import './_dark-mode.scss';
 // import {FaMoon, FaSun} from "react-icons/fa";
@@ -52,14 +53,14 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
   
     const menuSwitch = (
       <label className="form-check-label" htmlFor="theme-mode" touch={touch} setTouch={setTouch}>
-      <i className="ai-moon text-dark h1" onClick={() => setTouch(!touch)}> </i>
+      <i className="ai-moon text-info h3" onClick={() => setTouch(!touch)}> </i>
       </label>
       
     );
 
     const lightSwitch = (
       <label className="form-check-label" htmlFor="theme-mode" touch={touch} setTouch={setTouch}>
-      <i className="ai-sun text-success h1" onClick={() => setTouch(!touch)} > </i>
+      <i className="ai-sun text-success h3" onClick={() => setTouch(!touch)} > </i>
       </label>
     );
 
@@ -69,28 +70,6 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
         navigate("/");
       //   localStorage.clear();
     }
-
-    // const handleScroll = () => {
-    //   if (window.scrollY > 300) {
-    //     setIsVisible(true);
-    //   } else {
-    //     setIsVisible(false);
-    //   }
-    // };
-  
-    // const handleGoToTop = () => {
-    //   window.scrollTo({
-    //     top: 0,
-    //     behavior: 'smooth',
-    //   });
-    // };
-
-    // useEffect(() => {
-    //   window.addEventListener('scroll', handleScroll);
-    //   return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
-  
-
     
     return ( 
         <> 
@@ -118,27 +97,17 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                 <i className={`ai-moon text-dark display-6 ${isDarkMode ? 'moon-dark' : ''}`}
             onClick={handleSwitcherClick}> </i>
               </label> */}
-                <button className="btn btn-sm" onClick={() => toggleTheme()} 
+                {/* <Button className="btn-sm" onClick={() => toggleTheme()} 
                       checked={isDarkMode}
                       type="checkbox"
                       id="theme-switcher"
                       name="theme-switcher"> {touch ? menuSwitch: lightSwitch}
-                </button>
-                {/* <a className="btn-scroll-top" href="#top" dataScroll onClick={handleGoToTop}>
-                <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></circle>
-                      </svg><i className="ai-arrow-up"></i>
-                </a> */}
-
-                {/* <a class="btn-scroll-top" href="#top" data-scroll onClick={handleGoToTop}>
-                <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></circle>
-                      </svg><i className="ai-arrow-up"></i>
-                </a> */}
+                </Button> */}
+         
+         <Button type="button" className="p-3" checked={isDarkMode} onClick={() => toggleTheme()}>
+              {touch ? menuSwitch : lightSwitch}
+            </Button>
                 
-                {/* <button className="arrow-go-top" onClick={handleGoToTop}>
-                  <i className="ai-arrow-up display-1"></i>
-                </button> */}
           {/* <input
             className="form-check-input"
             type="checkbox"
@@ -167,7 +136,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
           <FaMoon className={`text-dark display-6 ${isDarkMode ? '' : 'moon-hidden'}`} /> */}
       
             </div>
-            {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" dataBsToggle="mode">
+            {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" databstoggle="mode">
               <input
                 className="form-check-input"
                 type="checkbox"

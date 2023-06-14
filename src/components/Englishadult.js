@@ -6,7 +6,7 @@ import less from "../img/engadult.jpg";
 export default function Englishadult() {
   return (
     <div>
-    <section className="jarallax dark-mode bg-dark py-5" dataJarallax dataSpeed="0.6">
+    <section className="jarallax dark-mode bg-dark py-5" datajarallax dataspeed="0.6">
     <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-60"></div>
     <div className="jarallax-img" style={{backgroundImage: 'url(assets/img/landing/corporate/engadult.JPG'}}></div>
     <div className="container position-relative zindex-2 pt-5 pb-md-2 pb-lg-3 pb-xl-4 pb-xxl-5">
