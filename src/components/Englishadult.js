@@ -1,8 +1,7 @@
 import React from 'react'
 
-import less from "../img/less.JPG";
-import les from "../img/les.JPG"
-import teens from "../img/leseng.png";
+import less from "../img/engadult.jpg";
+// import teens from "../img/engadult1.jpg";
 
 export default function Englishadult() {
   return (
@@ -56,7 +55,7 @@ export default function Englishadult() {
               <div className="bg-white opacity-40 position-absolute top-0 start-0 w-100 h-100"></div>
               <img className="d-block m-1" src="assets/img/services/v3/icons/monitor-white.svg" width="32" alt="Icon"/>
             </div>
-            <h3 className="h5 ps-3 mb-0">Шаг за шагом играй и развивайся</h3>
+            <h3 className="h5 ps-3 mb-0">Будь на высоте</h3>
           </div>
         </div>
         {/* <div className="col">
@@ -75,45 +74,41 @@ export default function Englishadult() {
   <section className="container py-4 py-sm-5 my-md-2 my-lg-3 my-xl-4 my-xxl-5">
         <div className="row align-items-center py-4 py-xl-5 my-2">
           <div className="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0">
-            <img className="rounded-5" src={teens} alt="ImH"/>
+            {/* <img className="rounded-5" src={teens} alt="ImH"/>
             <p></p>
             <br/>
-            <p></p>
+            <p></p> */}
             <img className="rounded-5" src={less} alt="ImH"/>
-            <p></p>
+            {/* <p></p>
             <br/>
             <p></p>
-            <img className="rounded-5" src={les} alt="ImH"/>
+            <img className="rounded-5" src={les} alt="ImH"/> */}
           </div>
           <div className="col-md-6 col-xl-5 order-md-1">
             <div className="pe-md-4 pe-xl-0">
               <h2 className=" pb-2 pb-lg-3">
-                 Для детей от 7 лет и подростков. <br/> Возможно обучение по вашей программе, подготовка к экзаменам.
+                Обучение взрослых <br/>
                 </h2>
               <p className="pb-2 pb-lg-0 mb-4 mb-lg-5 fs-lg">
-              Программа: Starlight, Click on, Headway, школьная программа или ваша на выбор. <br/>
-              Продолжительность: 72 занятия (сентябрь-май) <br/>
-              Интенсивность: 2 раза в неделю по 60 минут </p>
+              Курсы английского языка для современных и успешных!  <br/>
+              Интенсивность: 2 раза в неделю по 60 минут 
+              {/* <br/>
+              Обучение английскому языку для тех, кто:  */}
+              </p>
               <div className="row row-cols-1">
                 <div className="col">
                   {/* <div className="d-table bg-secondary rounded-1 p-2 mb-3">
                   <img className="d-block d-dark-mode-none m-1" src="assets/img/services/v3/icons/monitor-dark.svg" width="28" alt="Icon"/>
                   <img className="d-none d-dark-mode-block m-1" src="assets/img/services/v3/icons/monitor-light.svg" width="28" alt="Icon"/>
                   </div> */}
-                  <h3 className="h5 mb-2">Преимущества владения английским языком:</h3>
-                  <ol className="fs-lg mb-0">
-                    <li>Возможность говорить с большим количеством людей</li>
-                    <li>В детстве легче освоить иностранные языки</li>
-                    <li>Улучшение способностей детей на родном языке</li>
-                    <li>Социальный опыт и повышение эмпатии</li>
-                    <li>Развитие музыкального слуха у ребенка</li>
-                    <li>Расширение детского кругозора</li>
-                    <li>Развитие творческого мышления</li>
-                    <li>Расширение возможностей карьерного роста</li>
-                    <li>Предотвращение возрастного снижения познавательных способностей</li>
-                    <li>Улучшение понимания других культур</li>
-                    <li>Это весело!</li>
-                  </ol>
+                  <h3 className="h5 mb-2">Обучение английскому языку для тех, кто: </h3>
+                  <ul className="fs-lg mb-0">
+                    <li>Собирается работать и учиться за рубежом или в зарубежных компаниях на территории РФ</li>
+                    <li>Стремится продвинуться вверх по карьерной лестнице</li>
+                    <li>Хочет комфортно и легко путешествовать по миру</li>
+                    <li>Желает свободно общаться</li>
+                    <li>Работает с большим объемом информации, в том числе на английском языке</li>
+                  </ul>
                 </div> 
                 <p></p>
                 <div className="col">
@@ -127,7 +122,8 @@ export default function Englishadult() {
                     <li>Raymond - носитель языка, за границей преподавал в частной школе 3 года, в России преподает 4 года.</li>
                   </ul>
                   <p></p>
-                  <h3 className="h5 mb-2"> Разговорный Клуб. Интерактивный английский, игры и квесты. </h3>
+                  <h3 className="h5 mb-2"> Разговорный Клуб. Для активных, современных и успешных людей, интерактивный формат!
+                  <br/> Только по предварительной записи. </h3>
                 </div>
               </div>
             </div>
