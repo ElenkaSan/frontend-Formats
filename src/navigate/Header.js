@@ -8,8 +8,15 @@ import logo from '../img/logo.png';
 import { useNavigate } from "react-router-dom";
 import "../components/component.css";
 
+// import './_dark-mode.scss';
+// import {FaMoon, FaSun} from "react-icons/fa";
+
 const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const [touch, setTouch] = useState(false);
+
+    // const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
       const mode = window.localStorage.getItem('mode');
@@ -36,8 +43,25 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
         setIsDarkMode(true);
         root.classList.add('dark-mode');
       }
+      setIsDarkMode(!isDarkMode);
     };
+
+    // const handleSwitcherClick = () => {
+    //   toggleTheme();
+    // };
   
+    const menuSwitch = (
+      <label className="form-check-label" htmlFor="theme-mode" touch={touch} setTouch={setTouch}>
+      <i className="ai-moon text-dark h1" onClick={() => setTouch(!touch)}> </i>
+      </label>
+      
+    );
+
+    const lightSwitch = (
+      <label className="form-check-label" htmlFor="theme-mode" touch={touch} setTouch={setTouch}>
+      <i className="ai-sun text-success h1" onClick={() => setTouch(!touch)} > </i>
+      </label>
+    );
 
     const navigate = useNavigate();
     const handleClick = () => {
@@ -46,21 +70,104 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
       //   localStorage.clear();
     }
 
+    // const handleScroll = () => {
+    //   if (window.scrollY > 300) {
+    //     setIsVisible(true);
+    //   } else {
+    //     setIsVisible(false);
+    //   }
+    // };
+  
+    // const handleGoToTop = () => {
+    //   window.scrollTo({
+    //     top: 0,
+    //     behavior: 'smooth',
+    //   });
+    // };
+
+    // useEffect(() => {
+    //   window.addEventListener('scroll', handleScroll);
+    //   return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
+  
+
     
     return ( 
-        <> {['lg'].map((expand) => (
+        <> 
+         {['lg'].map((expand) => (
         <Navbar key={expand} expand={expand} className="navL fixed-top mb-3 bg-primary" >
           <Container fluid>
             <Navbar.Brand className="text-success" href="/">
               <p className="m-2"> <img src={logo} alt="logo" style={{ maxWidth: "50px"}} /></p>
               Форматы
             </Navbar.Brand>
-            {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode" data-bs-toggle="mode">
-              <input className="form-check-input" type="checkbox" id="theme-mode"/>
-              <label className="form-check-label" htmlFor="theme-mode"><i className="ai-sun fs-lg text-success"> {" "} </i></label>
-              <label className="form-check-label" htmlFor="theme-mode"><i className="ai-moon fs-lg text-dark"> { " "} </i></label>
-            </div> */}
+           
             <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode">
+            {/* <input
+                className="form-check-input"
+                type="checkbox"
+                id="theme-mode"
+                checked={isDarkMode}
+                onChange={toggleTheme}
+                
+              />
+              <label className="form-check-label" htmlFor="theme-mode" onClick={handleSwitcherClick}>
+                <i  className={`ai-sun text-warning display-6 ${isDarkMode ? 'sun-dark' : ''}`}> </i>
+              </label>
+              <label className="form-check-label" htmlFor="theme-mode" >
+                <i className={`ai-moon text-dark display-6 ${isDarkMode ? 'moon-dark' : ''}`}
+            onClick={handleSwitcherClick}> </i>
+              </label> */}
+                <button className="btn btn-sm" onClick={() => toggleTheme()} 
+                      checked={isDarkMode}
+                      type="checkbox"
+                      id="theme-switcher"
+                      name="theme-switcher"> {touch ? menuSwitch: lightSwitch}
+                </button>
+                {/* <a className="btn-scroll-top" href="#top" dataScroll onClick={handleGoToTop}>
+                <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></circle>
+                      </svg><i className="ai-arrow-up"></i>
+                </a> */}
+
+                {/* <a class="btn-scroll-top" href="#top" data-scroll onClick={handleGoToTop}>
+                <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></circle>
+                      </svg><i className="ai-arrow-up"></i>
+                </a> */}
+                
+                {/* <button className="arrow-go-top" onClick={handleGoToTop}>
+                  <i className="ai-arrow-up display-1"></i>
+                </button> */}
+          {/* <input
+            className="form-check-input"
+            type="checkbox"
+            id="theme-switcher"
+            checked={isDarkMode}
+            onChange={handleSwitcherClick}
+          /> 
+          
+          <label className="form-check-label" htmlFor="theme-switcher">
+            {isDarkMode ? <i className="ai-moon text-dark display-6"> </i> : <i className="ai-sun text-warning display-6"> </i>}
+          </label> */}
+         {/* <FaSun className={`text-warning display-6 ${isDarkMode ? 'sun-hidden' : ''}`} />
+          <label className="form-check-label" htmlFor="theme-switcher">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="theme-switcher"
+              checked={isDarkMode}
+              onChange={handleSwitcherClick}
+            />
+            <span className="slider"></span>
+            <span className={`switcher-label ${isDarkMode ? 'moon-label' : 'sun-label'}`}>
+              {isDarkMode ? 'Moon' : 'Sun'}
+            </span>
+          </label>
+          <FaMoon className={`text-dark display-6 ${isDarkMode ? '' : 'moon-hidden'}`} /> */}
+      
+            </div>
+            {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" dataBsToggle="mode">
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -68,13 +175,13 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                 checked={isDarkMode}
                 onChange={toggleTheme}
               />
-              <label className="form-check-label" htmlFor="theme-mode">
-                <i className="ai-sun fs-lg text-success"> </i>
-              </label>
-              <label className="form-check-label" htmlFor="theme-mode">
-                <i className="ai-moon fs-lg text-dark"> </i>
-              </label>
-            </div>
+      <label className="form-check-label" htmlFor="theme-mode">
+        <i className={`ai-sun fs-lg text-light ${isDarkMode ? 'moon-offset' : ''}`}></i>
+      </label>
+      <label className="form-check-label" htmlFor="theme-mode">
+        <i className={`ai-moon fs-lg text-dark ${isDarkMode ? 'sun-offset' : ''}`}></i>
+      </label>
+    </div> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="bg-success shadow-none bg-body-tertiary rounded"/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

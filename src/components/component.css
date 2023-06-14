@@ -19,10 +19,13 @@
   color: #e682ff; /* Set the desired text color */
 }
 
-/* .navL .nav-dropdown .dropdown-toggle:hover,
-.navL .nav-dropdown .dropdown-toggle:focus {
-  color: #fff; 
-} */
+.moon-offset {
+  margin-right: 4px;
+}
+
+.sun-offset {
+  margin-left: 4px;
+}
 
 
 .navbar-content {
