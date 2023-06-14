@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,6 +9,36 @@ import { useNavigate } from "react-router-dom";
 import "../components/component.css";
 
 const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+      const mode = window.localStorage.getItem('mode');
+      const root = document.getElementsByTagName('html')[0];
+  
+      if (mode !== undefined && mode === 'dark') {
+        setIsDarkMode(true);
+        root.classList.add('dark-mode');
+      } else {
+        setIsDarkMode(false);
+        root.classList.remove('dark-mode');
+      }
+    }, []);
+
+    const toggleTheme = () => {
+      const root = document.getElementsByTagName('html')[0];
+  
+      if (isDarkMode) {
+        window.localStorage.setItem('mode', 'light');
+        setIsDarkMode(false);
+        root.classList.remove('dark-mode');
+      } else {
+        window.localStorage.setItem('mode', 'dark');
+        setIsDarkMode(true);
+        root.classList.add('dark-mode');
+      }
+    };
+  
+
     const navigate = useNavigate();
     const handleClick = () => {
         logOut();
@@ -25,10 +55,25 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
               <p className="m-2"> <img src={logo} alt="logo" style={{ maxWidth: "50px"}} /></p>
               Форматы
             </Navbar.Brand>
-            <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode" data-bs-toggle="mode">
+            {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode" data-bs-toggle="mode">
               <input className="form-check-input" type="checkbox" id="theme-mode"/>
               <label className="form-check-label" htmlFor="theme-mode"><i className="ai-sun fs-lg text-success"> {" "} </i></label>
               <label className="form-check-label" htmlFor="theme-mode"><i className="ai-moon fs-lg text-dark"> { " "} </i></label>
+            </div> */}
+            <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="theme-mode"
+                checked={isDarkMode}
+                onChange={toggleTheme}
+              />
+              <label className="form-check-label" htmlFor="theme-mode">
+                <i className="ai-sun fs-lg text-success"> </i>
+              </label>
+              <label className="form-check-label" htmlFor="theme-mode">
+                <i className="ai-moon fs-lg text-dark"> </i>
+              </label>
             </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="bg-success shadow-none bg-body-tertiary rounded"/>
             <Navbar.Offcanvas

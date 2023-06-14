@@ -61,15 +61,6 @@ class App extends Component {
         showModeratorBoard: user.roles.includes("ROLE_MODERATOR"),
         showAdminBoard: user.roles.includes("ROLE_ADMIN"),
       });
-
-      // let mode = window.localStorage.getItem('mode'),
-      // root = document.getElementsByTagName('html')[0];
-      // if (mode !== undefined && mode === 'dark') {
-      //   root.classList.add('dark-mode');
-      // } else {
-      //  root.classList.remove('dark-mode');
-      // }
-
       }
     
     EventBus.on("logout", () => {
