@@ -15,9 +15,6 @@ import "../components/component.css";
 const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
-    const [touch, setTouch] = useState(false);
-
-
     useEffect(() => {
       const mode = window.localStorage.getItem('mode');
       const root = document.getElementsByTagName('html')[0];
@@ -51,15 +48,15 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
     // };
   
     const menuSwitch = (
-      <label className="form-check-label" htmlFor="theme-mode" touch={touch} setTouch={setTouch}>
-      <i className="ai-moon text-info h3" onClick={() => setTouch(!touch)}> </i>
+      <label className="form-check-label" htmlFor="theme-mode">
+      <i className="ai-moon text-info h3" onClick={() => setIsDarkMode(isDarkMode)}> </i>
       </label>
       
     );
 
     const lightSwitch = (
-      <label className="form-check-label" htmlFor="theme-mode" touch={touch} setTouch={setTouch}>
-      <i className="ai-sun text-success h3" onClick={() => setTouch(!touch)} > </i>
+      <label className="form-check-label" htmlFor="theme-mode">
+      <i className="ai-sun text-success h3" onClick={() => setIsDarkMode(!isDarkMode)} > </i>
       </label>
     );
 
@@ -105,8 +102,8 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                       name="theme-switcher"> {touch ? menuSwitch: lightSwitch}
                 </Button> */}
          
-         <label className="" checked={isDarkMode} onClick={() => toggleTheme()}>
-              {touch ? menuSwitch : lightSwitch}
+         <label className="" onClick={() => toggleTheme()}>
+              {isDarkMode ? menuSwitch : lightSwitch}
             </label>
                 
           {/* <input
