@@ -7,6 +7,27 @@
   background-color: #f8f9fa;
 } */
 
+@media only screen and (max-width: 1340px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+  
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+
+  }
+  
+  .navbar-nav .dropdown-menu.show {
+    display: block;
+  }
+}
+
+
 .navL .navbar-brand,
 .navL .navbar-nav .nav-link,
 .navL .nav-dropdown .dropdown-toggle {

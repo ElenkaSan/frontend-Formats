@@ -7,7 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../img/logo.png';
 import { useNavigate } from "react-router-dom";
 import "../components/component.css";
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 
 // import './_dark-mode.scss';
 // import {FaMoon, FaSun} from "react-icons/fa";
@@ -17,7 +17,6 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
 
     const [touch, setTouch] = useState(false);
 
-    // const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
       const mode = window.localStorage.getItem('mode');
@@ -70,13 +69,15 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
         navigate("/");
       //   localStorage.clear();
     }
-    
+
     return ( 
-        <> 
-         {['lg'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="navL fixed-top mb-3 bg-primary" >
+        <>
+        {/* <div className="page-wrapper">  */}
+
+         {['xl'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="navL fixed-top mb-3 bg-primary">
           <Container fluid>
-            <Navbar.Brand className="text-success" href="/">
+             <Navbar.Brand className="text-success" href="/">
               <p className="m-2"> <img src={logo} alt="logo" style={{ maxWidth: "50px"}} /></p>
               Форматы
             </Navbar.Brand>
@@ -104,9 +105,9 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                       name="theme-switcher"> {touch ? menuSwitch: lightSwitch}
                 </Button> */}
          
-         <Button type="button" className="p-3" checked={isDarkMode} onClick={() => toggleTheme()}>
+         <label className="" checked={isDarkMode} onClick={() => toggleTheme()}>
               {touch ? menuSwitch : lightSwitch}
-            </Button>
+            </label>
                 
           {/* <input
             className="form-check-input"
@@ -151,19 +152,24 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
         <i className={`ai-moon fs-lg text-dark ${isDarkMode ? 'sun-offset' : ''}`}></i>
       </label>
     </div> */}
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="bg-success shadow-none bg-body-tertiary rounded"/>
+            <Navbar.Toggle
+             aria-controls={`offcanvasNavbar-expand-${expand}`} 
+             className="navbar-toggler bg-success m-2 rounded"
+             />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               ariaLabelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
+             
               <Offcanvas.Header className="bg-danger" closeButton>
                 <Offcanvas.Title className="text-success"  id={`offcanvasNavbarLabel-expand-${expand}`}>
                  Наши Форматы
                 </Offcanvas.Title>
               </Offcanvas.Header>
+              
               <Offcanvas.Body className="bg-primary text-light">
-                <Nav className="justify-content-end flex-grow-1 pe-3 text-light"  >
+                <Nav className="justify-content-end flex-grow-1 pe-3 text-light ml-auto"  >
                   <NavDropdown 
                     title="О нас"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -172,7 +178,6 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/pay">Реквизиты компании
                      </NavDropdown.Item>
-                    {/* <NavDropdown.Divider /> */}
                     <NavDropdown.Item href="/contact">Контакты
                      </NavDropdown.Item>
                   </NavDropdown>
@@ -241,7 +246,6 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/photos">Фото & Видео
                      </NavDropdown.Item>
-                    {/* <NavDropdown.Divider /> */}
                   </NavDropdown>
                   <div className="navbar-nav mr-auto">
           
@@ -273,12 +277,13 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
             </Nav>
             </Offcanvas.Body>
             </Navbar.Offcanvas>
+            
           </Container>
         </Navbar>
       ))}
 
         </>
-
+        // </div>
     )
 
 }

@@ -4,7 +4,7 @@ import "./component.css";
 const Contact = () => {
   return (
     <div>
-    <main class="page-wrapper">
+    <main className="page-wrapper">
         <section className="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5 my-5"> <br/>
         <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
          <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i className="ai-home"></i></a>
