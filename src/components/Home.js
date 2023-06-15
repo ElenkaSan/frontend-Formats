@@ -1,4 +1,5 @@
-import React , { Component } from "react";
+// import React , { Component } from "react";
+import React, { useRef, useEffect, useState  } from 'react';
 
 import UserService from "../services/user.service";
 import kids from "../img/kids.png";
@@ -17,44 +18,93 @@ import create from "../img/crreate.JPG"
 
 import "./component.css"
 import { register } from 'swiper/element/bundle';
+
+
+// import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import Swiper from 'swiper';
+
 register();
 
-
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      content: ""
-    };
-  }
-
-  componentDidMount() {
-    UserService.getPublicContent().then(
-      response => {
-        this.setState({
-          content: response.data
+const Home = () => {
+    const [content, setContent] = useState('');
+    useEffect(() => {
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+          spaceBetween: 40,
+          loop: true,
+          bindedContent: true,
+          autoHeight: true,
+          pagination: {
+            el: '.testimonials-count',
+            type: 'fraction'
+          },
+          navigation: {
+            prevEl: '#prev-testimonial',
+            nextEl: '#next-testimonial'
+          }
         });
-      },
-      error => {
-        this.setState({
-          content:
-            (error.response && error.response.data) ||
+    
+        return () => {
+          // Cleanup Swiper instance when component unmounts
+          swiper.destroy();
+        };
+      }, []);
+    
+  
+
+  
+
+  useEffect(() => {
+    UserService.getPublicContent()
+      .then(response => {
+        setContent(response.data);
+      })
+      .catch(error => {
+        setContent(
+          (error.response && error.response.data) ||
             error.message ||
             error.toString()
-        });
-      }
-    );
-  }
+        );
+      });
+  }, []);
 
-  render() {
+// export default class Home extends Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       content: ""
+//     };
+//   }
+
+//   componentDidMount() {
+//     UserService.getPublicContent().then(
+//       response => {
+//         this.setState({
+//           content: response.data
+//         });
+//       },
+//       error => {
+//         this.setState({
+//           content:
+//             (error.response && error.response.data) ||
+//             error.message ||
+//             error.toString()
+//         });
+//       }
+//     );
+//   }
+
+//   render() {
     return (
       // <div className="container">
       <div>
         {/* <body> */}
         {/* <header className="jumbotron"> */}
           {/* <h3>{this.state.content}</h3> */}
-        {/* </header> */}
+        {/* </header> */} {content}
         <main className="page-wrapper">
          <section className="jarallax min-vh-100 py-lg-3 py-xl-4 py-xxl-5" datajarallax dataspeed="0.65">
         <div className="jarallax-img"  style={{backgroundImage: 'url(assets/img/landing/corporate/hero-bg.jpg)'}}></div>
@@ -92,7 +142,7 @@ export default class Home extends Component {
            Наш Центр: 
            <br></br> Гибкое и удобное пространство для развития потенциала личности
            <br></br> Развитие и поддержка навыков детей и взрослых
-           <br></br>  Поддержка и помощь в развитии/масштабировании бизнеса юридических лиц
+           <br></br> Поддержка и помощь в развитии/масштабировании бизнеса юридических лиц
         </h5>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
         {/* Item*/}
@@ -512,27 +562,9 @@ export default class Home extends Component {
         </div>
     </section>
 
-    <section className="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+    {/* <section className="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
         <div className="row pt-2 pt-sm-3 pt-md-4 pt-xl-5 mt-md-2">
         <div className="col-md-9 col-lg-7 order-md-2">
-      
-            {/* Swiper slider*/}
-            {/* <div className="swiper" 
-            dataSwiperOptions="{
-            &quot;spaceBetween&quot;: 40,
-            &quot;loop&quot;: true,
-            &quot;bindedContent&quot;: true,
-            &quot;autoHeight&quot;: true,
-            &quot;pagination&quot;: {
-            &quot;el&quot;: &quot;.testimonials-count&quot;,
-            &quot;type&quot;: &quot;fraction&quot;
-            },
-            &quot;navigation&quot;: {
-            &quot;prevEl&quot;: &quot;#prev-testimonial&quot;,
-            &quot;nextEl&quot;: &quot;#next-testimonial&quot;
-            } }" 
-            > */}
-
         <swiper-container >
           <swiper-slide>  
             <div className="swiper-slide" dataSwiperBinded="#testimonial-1">
@@ -571,46 +603,9 @@ export default class Home extends Component {
                 </div>
           </swiper-slide>
         </swiper-container>
-            {/* <div className="swiper-wrapper"> */}
-                {/* Item*/}
-                {/* <div className="swiper-slide" dataSwiperBinded="#testimonial-1">
-                <div className="d-flex d-md-none pt-3 mb-3"><i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
-                    <div className="ps-3">
-                    <h3 className="h5 mb-0">Lilia Bocouse</h3>
-                    <p className="text-muted mb-0">Head of Marketing</p>
-                    </div>
-                </div>
-                <h2 className="mb-lg-4">Thanks to your talented team for the strategy we dreamed about!</h2>
-                <p className="lead mb-0">Suspendisse mauris elit, pellentesque nec purus sed, finibus finibus ipsum. Proin posuere, metus sed porttitor pellentesque, ante magna tincidunt mi, nec fermentum dui ligula vel massa. Praesent ultrices iaculis arcu iaculis ultrices. Maecenas vitae nulla odio. In laoreet, lectus in tempus ultricies.  </p>
-                </div> */}
-                {/* Item*/}
-                {/* <div className="swiper-slide" dataSwiperBinded="#testimonial-2">
-                <div className="d-flex d-md-none pt-3 mb-3"><i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
-                    <div className="ps-3">
-                    <h3 className="h5 mb-0">Robert Fox</h3>
-                    <p className="text-muted mb-0">Marketing Coordinator</p>
-                    </div>
-                </div>
-                <h2 className="mb-lg-4">Exceptional work, delivery and flexibility. An excellent result.</h2>
-                <p className="lead mb-0">Leo vitae sem eget eget at in vivamus placerat sodales tristique risusiis senectusic quisque faucibus est justo egetert lobortis ultrices eu dignissim etiamier turpis tincidunt eget placerat feugiat senectusic quisque faucibus placerat sodales vitae tempor morbi tellus pulvinar tristique in turpis.  </p>
-                </div> */}
-                {/* Item*/}
-                {/* <div className="swiper-slide" dataSwiperBinded="#testimonial-3">
-                <div className="d-flex d-md-none pt-3 mb-3"><i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
-                    <div className="ps-3">
-                    <h3 className="h5 mb-0">Jenny Wilson</h3>
-                    <p className="text-muted mb-0">CEO, Co-Founder</p>
-                    </div>
-                </div>
-                <h2 className="mb-lg-4">Thanks to you, we have created a unique branding that is our pride!</h2>
-                <p className="lead mb-0">Duis sapien velit, rutrum ac rutrum dapibus, auctor ut lacus. Aenean sit amet erat augue. Aenean finibus, nibh sed malesuada maximus, nisi tellus iaculis quam, eget egestas mi felis eu urna. Quisque id nisl commodo, egestas eros ac, cursus odio. Ut nec rutrum magna, vel tempor erat. Vivamus nec tempus purus.  </p>
-                </div>
-            </div> */}
-            {/* </div> */}
         </div>
         <div className="col-md-3 offset-lg-1 order-md-1 mt-n3">
             <i className="ai-quotes d-none d-md-block text-primary ms-n2 mb-1" style={{fontSize: '150px'}}></i>
-            {/* Contnetn binded to slider (on screens > 768px)*/}
             <div className="binded-content h-auto d-none d-md-block">
             <div className="binded-item h-auto active" id="testimonial-1">
                 <h3 className="h5 mb-1">Татьяна Шулъц</h3>
@@ -625,7 +620,6 @@ export default class Home extends Component {
                 <p className="text-muted mb-0">CEO, Co-Founder</p>
             </div>
             </div>
-            {/* Swiper controls*/}
             <div className="d-flex align-items-center pb-2 pb-md-0 pt-4 mt-3">
             <button className="btn btn-icon btn-sm btn-outline-primary rounded-circle me-3" type="button" id="prev-testimonial"><i className="ai-arrow-left"></i></button>
             <div className="testimonials-count fw-medium flex-shrink-0 text-center" style={{width: '2.5rem'}}></div>
@@ -633,7 +627,108 @@ export default class Home extends Component {
             </div>
         </div>
         </div>
+    </section> */}
+
+
+   
+    <section className="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+      <div className="row pt-2 pt-sm-3 pt-md-4 pt-xl-5 mt-md-2">
+        <div className="col-md-9 col-lg-7 order-md-2">
+          {/* Swiper slider */}
+          <div className="swiper" 
+        //   data-swiper-options
+          data-swiper 
+          >
+            <div className="swiper-wrapper">
+              {/* Item 1 */}
+              <div className="swiper-slide">
+              <div className="d-flex d-md-none pt-3 mb-3">
+                  <i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
+                  <div className="h-auto ps-3" id="testimonial-1">
+                    <h3 className="h5 mb-0">Лера Серкина</h3>
+                    <p className="text-muted mb-0">Marketing Coordinator</p>
+                  </div>
+                </div>
+                <h2 className="mb-lg-4">Thanks to your talented team for the strategy we dreamed about!</h2>
+                <p className="lead mb-0">
+                  Suspendisse mauris elit, pellentesque nec purus sed, finibus finibus ipsum. Proin posuere, metus sed
+                  porttitor pellentesque, ante magna tincidunt mi, nec fermentum dui ligula vel massa. Praesent ultrices
+                  iaculis arcu iaculis ultrices. Maecenas vitae nulla odio. In laoreet, lectus in tempus ultricies.
+                </p>
+              </div>
+
+              {/* Item 2 */}
+              <div className="swiper-slide">
+              <div className="d-flex d-md-none pt-3 mb-3">
+                  <i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
+                  {/* <div className="ps-3"> */}
+                  <div className="h-auto ps-3" id="testimonial-2">
+                    <h3 className="h5 mb-0">Татьяна Шулъц</h3>
+                    <p className="text-muted mb-0">Head of Marketing</p>
+                  </div>
+                </div>
+                <h2 className="mb-lg-4">Exceptional work, delivery and flexibility. An excellent result.</h2>
+                <p className="lead mb-0">
+                  Leo vitae sem eget eget at in vivamus placerat sodales tristique risusiis senectusic quisque faucibus
+                  est justo egetert lobortis ultrices eu dignissim etiamier turpis tincidunt eget placerat feugiat
+                  senectusic quisque faucibus placerat sodales vitae tempor morbi tellus pulvinar tristique in turpis.
+                </p>
+              </div>
+
+              {/* Item 3 */}
+              <div className="swiper-slide">
+              <div className="d-flex d-md-none pt-3 mb-3">
+                  <i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
+                  {/* <div className="ps-3"> */}
+                  <div className="h-auto ps-3" id="testimonial-3">
+                    <h3 className="h5 mb-0">Данил Войский</h3>
+                    <p className="text-muted mb-0">CEO, Co-Founder</p>
+                  </div>
+                </div>
+                <h2 className="mb-lg-4">Thanks to you, we have created a unique branding that is our pride!</h2>
+                <p className="lead mb-0">
+                  Duis sapien velit, rutrum ac rutrum dapibus, auctor ut lacus. Aenean sit amet erat augue. Aenean
+                  finibus, nibh sed malesuada maximus, nisi tellus iaculis quam, eget egestas mi felis eu urna. Quisque id
+                  nisl commodo, egestas eros ac, cursus odio. Ut nec rutrum magna, vel tempor erat. Vivamus nec tempus
+                  purus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-3 offset-lg-1 order-md-1 mt-n3">
+
+        <i className="ai-quotes d-none d-md-block text-primary ms-n2 mb-1" style={{ fontSize: '150px' }}></i>
+          {/* Content binded to slider (on screens > 768px) */}
+          <div className="binded-content h-auto d-none d-md-block">
+            <div className="binded-item h-auto" id="testimonial-1">
+              <p className="text-muted mb-0">Лера Серкина - Marketing Coordinator</p>
+            </div>
+            <div className="binded-item h-auto" id="testimonial-2">
+              <p className="text-muted mb-0">Татьяна Шулъц - Head of Marketing</p>
+            </div>
+            <div className="binded-item h-auto" id="testimonial-3">
+              <p className="text-muted mb-0">Данил Войский - CEO, Co-Founder</p>
+            </div>
+          </div>
+
+          {/* Swiper controls */}
+          <div className="d-flex align-items-center pb-2 pb-md-0 pt-4 mt-3">
+            <button className="btn btn-icon btn-sm btn-outline-primary rounded-circle me-3" type="button" id="prev-testimonial">
+              <i className="ai-arrow-left"></i>
+            </button>
+            <div className="testimonials-count fw-medium flex-shrink-0 text-center" style={{ width: '2.5rem' }}></div>
+            <button className="btn btn-icon btn-sm btn-outline-primary rounded-circle ms-3" type="button" id="next-testimonial">
+              <i className="ai-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
+
 
     <section className="container pt-5 mt-md-2 mt-lg-3 mt-xl-4 mt-xxl-5">
         <div className="row g-4 pt-2 pt-sm-3 pt-md-4 pt-xl-5 mt-lg-2">
@@ -861,4 +956,6 @@ export default class Home extends Component {
       </div>
     );
   }
-}
+// }
+
+export default Home;

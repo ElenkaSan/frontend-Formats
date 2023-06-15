@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-2">
             <div className="col pb-2">
               <h4 className="mb-lg-4">Адрес </h4>
-              <p className="fs-lg fw-medium pb-3 mb-3"> ул.Попова, 7, стр.2 (вход с торца)</p>
+              <p className="fs-lg fw-medium pb-3 mb-3">Тюмень, ул.Попова, 7, стр.2 (вход с торца)</p>
               <a className="btn btn-primary" href="https://2gis.ru/tyumen/search/%D1%83%D0%BB.%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2%D0%B0%2C%207%2C%20%D1%81%D1%82%D1%80.2/geo/1830223003790141/65.543687%2C57.143645?m=65.543719%2C57.143634%2F17.33">
                 <i className="ai-map-pin me-1"></i>Открыть на 2GIS
                 </a>
