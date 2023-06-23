@@ -10,7 +10,7 @@ import arrow from "../img/arrow.png";
 import engTeach from "../img/englishT.png";
 import Anna from "../img/annaR.jpeg";
 import engTch from "../img/engTch.png"
-import chest from "../img/chestClub.png"
+import chest from "../img/chestT.jpg"
 import art from "../img/art.png"
 import mang from "../img/mang.png"
 import proforent from "../img/proforent.png"
@@ -22,7 +22,7 @@ import { register } from 'swiper/element/bundle';
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+// import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import Swiper from 'swiper';
 
 register();
@@ -168,7 +168,8 @@ const Home = () => {
                 <li> Английский язык (7+)</li>
                 <li> Рисование/лепка (5+)</li>
                 <li> Шахматы (5+)</li>
-                <li> Музыкальное направление (5+)</li>
+                {/* <li> Музыкальное направление (5+)</li> */}
+                <li> Графический ДИЗАИН (16+)</li>
                 <li> Профориентация (12+)</li>
                 <li> Полезные каникулы (7+)</li>
                 </ul>
@@ -642,6 +643,13 @@ const Home = () => {
             <div className="swiper-wrapper">
               {/* Item 1 */}
               <div className="swiper-slide">
+            
+              {/* <div className="col-md-3 offset-lg-1 order-md-1">
+                  <div className="binded-item h-auto active" id="testimonial-1">
+                     <p className="text-muted mb-0">Лера Серкина - Marketing Coordinator</p>
+                  </div>
+             </div> */}
+
               <div className="d-flex d-md-none pt-3 mb-3">
                   <i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
                   <div className="h-auto ps-3" id="testimonial-1">
@@ -659,6 +667,13 @@ const Home = () => {
 
               {/* Item 2 */}
               <div className="swiper-slide">
+{/* 
+              <div className="col-md-3 offset-lg-1 order-md-1">
+                  <div className="binded-item h-auto active" id="testimonial-2">
+                     <p className="text-muted mb-0">Татьяна Шулъц - Head of Marketing</p>
+                  </div>
+             </div> */}
+
               <div className="d-flex d-md-none pt-3 mb-3">
                   <i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
                   {/* <div className="ps-3"> */}
@@ -677,6 +692,13 @@ const Home = () => {
 
               {/* Item 3 */}
               <div className="swiper-slide">
+
+              {/* <div className="col-md-3 offset-lg-1 order-md-1">
+                  <div className="binded-item h-auto active" id="testimonial-3">
+                     <p className="text-muted mb-0">Данил Войский - CEO, Co-Founder</p>
+                  </div>
+             </div> */}
+
               <div className="d-flex d-md-none pt-3 mb-3">
                   <i className="ai-quotes d-md-none text-primary display-3 mt-n2"></i>
                   {/* <div className="ps-3"> */}
@@ -701,13 +723,13 @@ const Home = () => {
         <i className="ai-quotes d-none d-md-block text-primary ms-n2 mb-1" style={{ fontSize: '150px' }}></i>
           {/* Content binded to slider (on screens > 768px) */}
           <div className="binded-content h-auto d-none d-md-block">
-            <div className="binded-item h-auto" id="testimonial-1">
+            <div className="binded-item h-auto active" id="testimonial-1">
               <p className="text-muted mb-0">Лера Серкина - Marketing Coordinator</p>
             </div>
-            <div className="binded-item h-auto" id="testimonial-2">
+            <div className="binded-item h-auto active" id="testimonial-2">
               <p className="text-muted mb-0">Татьяна Шулъц - Head of Marketing</p>
             </div>
-            <div className="binded-item h-auto" id="testimonial-3">
+            <div className="binded-item h-auto active" id="testimonial-3">
               <p className="text-muted mb-0">Данил Войский - CEO, Co-Founder</p>
             </div>
           </div>

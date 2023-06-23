@@ -17454,7 +17454,7 @@ img-comparison-slider:focus {
   outline: none;
 }
 
-.binded-content {
+/* .binded-content {
   position: relative;
   height: 100%;
 }
@@ -17475,7 +17475,7 @@ img-comparison-slider:focus {
   position: relative;
   visibility: visible;
   opacity: 1;
-}
+} */
 
 .swap-image {
   display: inline-block;

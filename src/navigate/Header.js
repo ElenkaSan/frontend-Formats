@@ -189,8 +189,10 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/chest">Шахматы
                      </NavDropdown.Item>
-                     <NavDropdown.Item href="/music">Музыкальное направление
+                     <NavDropdown.Item href="/design"> Графический Дизайн
                      </NavDropdown.Item>
+                     {/* <NavDropdown.Item href="/music">Музыкальное направление
+                     </NavDropdown.Item> */}
                     <NavDropdown.Item href="/prof">Профориентация
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/vacation">Полезные каникулы
