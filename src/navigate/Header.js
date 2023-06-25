@@ -80,27 +80,6 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
             </Navbar.Brand>
            
             <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode">
-            {/* <input
-                className="form-check-input"
-                type="checkbox"
-                id="theme-mode"
-                checked={isDarkMode}
-                onChange={toggleTheme}
-                
-              />
-              <label className="form-check-label" htmlFor="theme-mode" onClick={handleSwitcherClick}>
-                <i  className={`ai-sun text-warning display-6 ${isDarkMode ? 'sun-dark' : ''}`}> </i>
-              </label>
-              <label className="form-check-label" htmlFor="theme-mode" >
-                <i className={`ai-moon text-dark display-6 ${isDarkMode ? 'moon-dark' : ''}`}
-            onClick={handleSwitcherClick}> </i>
-              </label> */}
-                {/* <Button className="btn-sm" onClick={() => toggleTheme()} 
-                      checked={isDarkMode}
-                      type="checkbox"
-                      id="theme-switcher"
-                      name="theme-switcher"> {touch ? menuSwitch: lightSwitch}
-                </Button> */}
          
          <label className="" onClick={() => toggleTheme()}>
               {isDarkMode ? menuSwitch : lightSwitch}
@@ -218,7 +197,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      <NavDropdown.Item href="/englishadult">Английский язык
                      </NavDropdown.Item>
                   </NavDropdown>
-
+{/* 
                   <NavDropdown
                     title="ФОРМАТЫ Бизнеса"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -233,7 +212,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/business">Бизнес Тренинги
                      </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
 
                   <NavDropdown
                     title="Публикации"

@@ -26,19 +26,6 @@ import GoToTopButton from './components/GoToTopButton';
 // import Aboutus from "./components/Aboutus"
 // import Promo from "./components/Promo"
 
-// import { Navbar, Nav, NavItem } from "reactstrap";
-// import { NavLink, useNavigate } from "react-router-dom";
-// import DropdownButton from 'react-bootstrap/DropdownButton'
-// import Dropdown from 'react-bootstrap/Dropdown'
-// import Button from 'react-bootstrap/Button';
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-// import Offcanvas from 'react-bootstrap/Offcanvas';
-
-
-
 class App extends Component {
   constructor(props) {
     super(props);
