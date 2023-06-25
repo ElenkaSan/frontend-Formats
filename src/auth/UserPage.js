@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { Card, CardBody, Button } from 'reactstrap';
+// import { Link } from "react-router-dom";
+// import { Card, CardBody, Button } from 'reactstrap';
+import { useNavigate } from "react-router-dom";
 import UserContext from "../auth/UserContext";
 // import {
 //    BsPencilSquare
@@ -19,6 +20,7 @@ import avatar from "../img/avatar.png"
   const UserPage = ( updateUser ) => {
     const { isLoggedIn } = useContext(UserContext);
     const [isUpdate, setIsUpdate] = useToggle(false);
+    
 
     return (
       <section className="bg-secondary">
@@ -47,9 +49,10 @@ import avatar from "../img/avatar.png"
                   {/* <nav className="nav flex-column pb-2 pb-lg-4 mb-1">
                    <h4 className="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4><a className="nav-link fw-semibold py-2 px-0" href="account-orders.html"><i className="ai-cart fs-5 opacity-60 me-2"></i>Orders</a><a className="nav-link fw-semibold py-2 px-0" href="account-earnings.html"><i className="ai-activity fs-5 opacity-60 me-2"></i>Earnings</a><a className="nav-link fw-semibold py-2 px-0" href="account-chat.html"><i className="ai-messages fs-5 opacity-60 me-2"></i>Chat<span className="badge bg-danger ms-auto">4</span></a><a className="nav-link fw-semibold py-2 px-0" href="account-favorites.html"><i className="ai-heart fs-5 opacity-60 me-2"></i>Favorites</a>
                   </nav>  */}
-                  <nav className="nav flex-column">
+                  {/* <nav className="nav flex-column">
                     <a className="nav-link fw-semibold py-2 px-0" href="/">
-                    <i className="ai-logout fs-5 opacity-60 me-2"></i>Выйти</a></nav>
+                    <i className="ai-logout fs-5 opacity-60 me-2"></i>Выйти</a>
+                  </nav> */}
                 </div>
               </div>
             </div>
@@ -72,7 +75,10 @@ import avatar from "../img/avatar.png"
                 </div>
                 <div className="d-md-flex align-items-center">
                   <div className="d-sm-flex align-items-center">
-                    <div className="rounded-circle bg-size-cover bg-position-center flex-shrink-0" style={{width: '80px', height: '80px'}}><img  src={avatar} alt="avatar" /></div>
+                    <div className="rounded-circle bg-size-cover bg-position-center flex-shrink-0" style={{width: '80px', height: '80px'}}>
+                      <img  src={avatar} alt="avatar" />
+                    </div>
+                
                     <div className="pt-3 pt-sm-0 ps-sm-3">
                       <h3 className="h4 mb-2">{`${isLoggedIn.firstName} ${isLoggedIn.lastName}`}
                       <i className="ai-circle-check-filled fs-base text-success ms-2"></i></h3>
@@ -112,7 +118,7 @@ import avatar from "../img/avatar.png"
                       </tr> */}
                       <tr>
                         <td className="border-0 text-muted py-1 px-0">Дата Рождения</td>
-                        <td className="border-0 text-dark fw-medium py-1 ps-3">{`${isLoggedIn.DOB}`}</td>
+                        <td className="border-0 text-dark fw-medium py-1 ps-3">{`${isLoggedIn.dob}`}</td>
                       </tr>
                     </table>
                   </div>
@@ -126,12 +132,19 @@ import avatar from "../img/avatar.png"
                 </div>
                 <div className="alert bg-secondary d-flex mb-0">
                   <div className="ps-2">
-                  <div className="d-flex align-items-center mt-sm-n1 pb-4 mb-1 mb-lg-2"><i className="ai-map-pin text-primary lead pe-1 me-2"></i>
+                  <div className="d-flex align-items-center">
+                    <i className="ai-map-pin text-primary lead pe-1 me-2"></i>
                       <h2 className="h4 mb-0">Адрес</h2>
                       {/* <a className="btn btn-sm btn-secondary ms-auto" href="account-settings.html">
                         <i className="ai-edit ms-n1 me-2"></i>Edit info</a> */}
                     </div>
                     <p className="fs-lg text-dark mb-0">{`${isLoggedIn.address}`}</p>
+                   <p></p>
+                   <p></p>
+                   {/* <div className="d-flex align-items-center">
+                    <h2 className="h4 mb-0">Интересы</h2>
+                    </div>
+                    <p className="fs-lg text-dark mb-0">{ null ? `${isLoggedIn.hobby}` : "Вы еще не добавили интересы"}</p> */}
                     {/* <div className="d-flex align-items-center pt-4 pb-1 my-2">
                       <h3 className="h6 mb-0 me-3">Billing address 1</h3>
                       <span className="badge bg-faded-primary text-primary">Primary</span>

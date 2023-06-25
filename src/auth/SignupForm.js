@@ -88,17 +88,17 @@ function SignupForm({ signup }) {
   //This handles the submission by the user and will either be successful or not. 
   const handleSubmit = async (evt) => {
     evt.preventDefault(); 
-    setLoading(true);
-    setMessage("Неверное имя пользователя или пароль.")
     try {
         const response = await signup({ ...formData });
         if (response.message === "success") {
-          navigate("/user");
           setFormData(INITIAL_STATE);
           window.location.reload();
           setMessage("Вы успешно ввели свои данные.");
+          setLoading(true);
+          navigate("/user");
         } else {
           setLoading(false);
+          // setMessage("Неверное имя пользователя или пароль.")
         }
     } catch (error) {
         const resMessage =
@@ -198,9 +198,9 @@ function SignupForm({ signup }) {
                     <div className="form-group">
                       <label htmlFor="DOB">Дата Рождения</label>
                       <input
-                        type="date"
+                        type="text"
                         className="form-control form-control-lg ps-5"
-                        placeholder="Дата Рождения"
+                        placeholder="ГГГГ-ММ-ДД"
                         name="DOB"
                         value={formData.DOB}
                         onChange={handleChange}

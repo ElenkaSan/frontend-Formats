@@ -74,18 +74,18 @@ function LoginForm({ login }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // setFormData(INITIAL_STATE);
-    setLoading(true);
-    // setMessage("Неверное имя пользователя или пароль.")
+    
     try {
       const response = await login({ ...formData });
       if (response.message === "success") {
-        console.log("Navigating to /user");
-        navigate("/user");
         setFormData(INITIAL_STATE);
+        setLoading(true);
+        navigate("/user");
         // window.location.reload();
-        setMessage("Вы успешно ввели свои данные.");
+        // setMessage("Вы успешно ввели свои данные.");
       } else {
         setLoading(false);
+        setMessage("Неверное имя пользователя или пароль.")
       }
     } catch (error) {
       const resMessage =
@@ -98,6 +98,7 @@ function LoginForm({ login }) {
       setLoading(false);
     }
     
+   
   };
   
     // setLoading(false);
@@ -185,6 +186,7 @@ function LoginForm({ login }) {
             <button
               className="btn btn-primary btn-block"
               disabled={formData.loading}
+              to="/user"
             >
               {loading && (
                 <span className="spinner-border spinner-border-sm"></span>
