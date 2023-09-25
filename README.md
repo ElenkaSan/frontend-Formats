@@ -1,9 +1,8 @@
-cd into the "front-end Formats" directory, install required packages, then start the app.
-
-
+## Coaching Website for the multi-format development center "Formats".
 
 https://github.com/ElenkaSan/frontend-Formats/assets/75818489/45847402-fe65-4388-a487-371a739ec1a0
 
+cd into the "front-end Formats" directory, install required packages, then start the app.
 
 ### Set port
 .env
