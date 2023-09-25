@@ -1,4 +1,5 @@
-## Coaching Website for the multi-format development center "Formats".
+## Coaching Website for the multi-format development center "Formats". 
+### This website is about professional coaching for students & adults, personal coaching for kids, and corporate business training.
 
 https://github.com/ElenkaSan/frontend-Formats/assets/75818489/88c83c55-9150-4ea4-ae8a-e51a6aefcb9a
 
