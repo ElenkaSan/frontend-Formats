@@ -1,5 +1,8 @@
 ## Coaching Website for the multi-format development center "Formats".
 
+https://github.com/ElenkaSan/frontend-Formats/assets/75818489/88c83c55-9150-4ea4-ae8a-e51a6aefcb9a
+
+
 https://github.com/ElenkaSan/frontend-Formats/assets/75818489/45847402-fe65-4388-a487-371a739ec1a0
 
 cd into the "front-end Formats" directory, install required packages, then start the app.
