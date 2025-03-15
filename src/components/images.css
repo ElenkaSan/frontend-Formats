@@ -1,0 +1,10 @@
+.custom-image {
+    border-top-left-radius: 15px;  /* Small curve */
+    border-top-right-radius: 99px; /* Large curve */
+    border-bottom-left-radius: 99px; /* Large curve */
+    border-bottom-right-radius: 15px; /* Small curve */
+}
+
+.stat-box img {
+    height: 70%;
+}
