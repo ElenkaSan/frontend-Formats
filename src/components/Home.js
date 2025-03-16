@@ -14,7 +14,7 @@
  import polina from "../img/polina.jpeg"
  import logoped from "../img/logoped.jpeg"
  import alex from "../img/alex.jpeg"
- // import art from "../img/art.png"
+
  // import mang from "../img/mang.png"
  import proforent from "../img/proforent.png"
  import create from "../img/crreate.JPG"
@@ -165,21 +165,21 @@
                  <h3 className="h4">Детские ФОРМАТЫ</h3>
                  <ul className="mb-0 fs-lg">
                  <li>«Полезная продлёнка» с 1-4 класс (6+)</li>
-                 <li> Английский язык (7+)</li>
-                 <li> Профориентация (12+)</li>
-                 <li> Полезные каникулы (7+)</li>
-                 <li> Бизнес клуб для подростков “STARtup” (12+)</li>
-                 <li> Арт-студия (5+)</li>
-                 <li> Шахматы/шашки (5+)</li>
+                 <li>Английский язык (7+)</li>
+                 <li>Профориентация (12+)</li>
+                 <li>Полезные каникулы (7+)</li>
+                 <li>Бизнес клуб для подростков “STARtup” (12+)</li>
+                 <li>Детские Арт-студия (5+)</li>
+                 <li>Шахматы/шашки (5+)</li>
                  <li>Музыкальное направление (гитара, фортепиано, вокал) (7+)</li>
                  <li>Танцевальное направление (5+) </li>
-                 <li> Логопед (5+)</li>
+                 <li>Студия «Я-артист» (7+)</li>
+                 <li>Логопед (5+)</li>
                  <li>Скорочтение (5+)</li>
                  <li>Каллиграфия (5+)</li>
-                 <li>Репетиторство (7+)</li>
                  <li>Подготовка к школе (5+)</li>
-                 <li> Студия «Я-артист» (7+)</li>
-                 <li>Подготовка к ВПР 4 класс</li>      
+                 <li>Подготовка к ВПР 4 класс</li>   
+                 <li>Репетиторство (7+)</li>   
                  </ul>
              </div>
              {/* <div className="card-footer border-0 pt-3 mb-3">

@@ -21,10 +21,9 @@ export default function Chest() {
       <p className="mb-0 lead text-white" 
     //   style={{maxWidth: "480px"}}
       >
-      Шахматы – это древняя и увлекательная игра, которая представляет собой настольное сражение умов. 
-      Играя в шахматы, вы не только наслаждаетесь увлекательным времяпрепровождением, но и развиваете свой ум, аналитические способности и умение принимать решения. 
-      Шахматы – это истинный вызов для разума, который помогает улучшить качество мышления, управление временем и способность решать сложные задачи.
-      </p>
+        Шахматы и шашки - уникальный инструмент развития творческого мышления, изобретательности и способность решать сложные задачи. У детей, играющих в шахматы,
+        развивается интуиция, умение ориентироваться на плоскости и в пространстве, повышается скорость интеллектуальной реакции.
+     </p>
       {/* Features*/}
       <div className="d-none d-xxl-block" style={{height: "220px"}}></div>
       <div className="d-none d-lg-block d-xxl-none" style={{height: "160px"}}></div>
@@ -106,11 +105,11 @@ export default function Chest() {
                   </div> */}
                   <h3 className="h5 mb-2">ШАХМАТЫ и их польза:</h3>
                   <ul className="fs-lg mb-0">
-                    <li>Повышение памяти и умственной гибкости</li>
                     <li>Развитие логического мышления</li>
+                    <li>Повышение памяти и умственной гибкости</li>
                     <li>Концентрации</li>
                     <li>Внимания</li>
-                    <li>Ааналитические способности</li>
+                    <li>Аналитические способности</li>
                     <li>Выработка воли и характера</li>
                     <li>Навыки коммуникации</li>
                     <li>Развитие целеустремленности</li>
@@ -120,19 +119,20 @@ export default function Chest() {
                 <p></p>
                 <h3 className="h5 mb-2">Ваш преподаватель Георгий Баев</h3>
                 <p className="fs-lg"> Индивидуальные занятия и группы интенсивность: 2 раза в неделю по 40/60 минут.</p>
+                <p className="fs-lg">В центре развития «Форматы» уделяют особое внимание начинающим шахматистам и проводят турниры для начинающих.</p>
               </div>
             </div>
           </div>
         </div>
       
-        <div className="col pb-2">
-              <h4 className="mb-lg-4"> Подробности по Developskillsnow 
+        <div className="pb-2">
+              <h4 className="mb-lg-3"> Подробности о направлении и наличие мест уточняйте у администратора или Developskillsnow 
               {/* <a className="nav-link fs-lg p-0" href="mailto:developskillsnow@yandex.ru">developskillsnow@yandex.ru</a> */}
               {/* <p className="lead"> */}
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://vk.com/developskillsnow"><i className="ai-vk"> </i> </a> 
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://www.instagram.com/developskillsnow"><i className="ai-instagram"> </i> </a> 
               </h4>
-             <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46"> По телефону: +7 (992) 300-65-46</a>
+             <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46">Запись по телефонам: +7 (992) 300-65-46, +7 (992) 300-65-23</a>
             </div>
        
       </section>

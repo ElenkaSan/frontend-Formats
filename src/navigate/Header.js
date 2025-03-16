@@ -6,13 +6,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../img/logo.png';
 import { useNavigate } from "react-router-dom";
-import "../components/component.css";
+import "../components/navbar.css";
+
 // import { Button } from 'react-bootstrap';
 
 // import './_dark-mode.scss';
 // import {FaMoon, FaSun} from "react-icons/fa";
 
-const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
+// NEED fix size of text less 1334px!!!!!
+
+// const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
+const Header = ({logOut}) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
@@ -71,7 +75,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
         <>
         {/* <div className="page-wrapper">  */}
 
-         {['xl'].map((expand) => (
+         {['xxl'].map((expand) => (
         <Navbar key={expand} expand={expand} className="navL fixed-top mb-3 bg-primary">
           <Container fluid>
              <Navbar.Brand className="text-success" href="/">
@@ -79,9 +83,9 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
               Форматы
             </Navbar.Brand>
            
-            <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto dark-mode">
+            {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 p-2 me-lg-4 ms-auto dark-mode"> */}
          
-         <label className="" onClick={() => toggleTheme()}>
+         <label className="form-check form-switch mode-switch order-lg-2 pe-3 ml-auto dark-mode" onClick={() => toggleTheme()}>
               {isDarkMode ? menuSwitch : lightSwitch}
             </label>
                 
@@ -112,7 +116,7 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
           </label>
           <FaMoon className={`text-dark display-6 ${isDarkMode ? '' : 'moon-hidden'}`} /> */}
       
-            </div>
+            {/* </div> */}
             {/* <div className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" databstoggle="mode">
               <input
                 className="form-check-input"
@@ -145,9 +149,9 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
               </Offcanvas.Header>
               
               <Offcanvas.Body className="bg-primary text-light">
-                <Nav className="justify-content-end flex-grow-1 pe-3 text-light ml-auto"  >
-                  <NavDropdown 
-                    title="О нас"
+                <Nav className="justify-content-end flex-grow-2 pe-3 text-light ml-auto">
+                  <NavDropdown
+                    title="О нас" 
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     <NavDropdown.Item href="/aboutus">Наша Команда
@@ -166,16 +170,21 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/class">Рисование/лепка
                      </NavDropdown.Item>
-                    <NavDropdown.Item href="/chest">Шахматы
+                     <NavDropdown.Item href="/afterschool">Продленка
+                      </NavDropdown.Item>
+                     <NavDropdown.Item href="/logoped">Логопед
                      </NavDropdown.Item>
-                     <NavDropdown.Item href="/design"> Графический Дизайн
-                     </NavDropdown.Item>
-                     {/* <NavDropdown.Item href="/music">Музыкальное направление
+                     {/* <NavDropdown.Item href="/design"> Графический Дизайн
                      </NavDropdown.Item> */}
+                     <NavDropdown.Item href="/music">Музыкальное направление
+                     </NavDropdown.Item>
                     <NavDropdown.Item href="/prof">Профориентация
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/vacation">Полезные каникулы
                      </NavDropdown.Item>
+                     <NavDropdown.Item href="/chest">Шахматы
+                     </NavDropdown.Item>
+                     
                   </NavDropdown>
 
                   <NavDropdown
@@ -192,27 +201,27 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/niceage">Клуб «Приятный возраст»
                      </NavDropdown.Item>
-                    <NavDropdown.Item href="/travel">Психологический туризм
-                     </NavDropdown.Item>
+                    {/* <NavDropdown.Item href="/travel">Психологический туризм
+                     </NavDropdown.Item> */}
                      <NavDropdown.Item href="/englishadult">Английский язык
                      </NavDropdown.Item>
                   </NavDropdown>
-{/* 
+
                   <NavDropdown
                     title="ФОРМАТЫ Бизнеса"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/group">Групповой Коуч
+                    <NavDropdown.Item href="/executive">Executive коучинг
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/team">Командный Коуч
                      </NavDropdown.Item>
-                    <NavDropdown.Item href="/corporate">Корпоративный Коуч
+                    <NavDropdown.Item href="/training">Тренинги
                      </NavDropdown.Item>
-                     <NavDropdown.Item href="/testing">Групповое Тестирование
+                     <NavDropdown.Item href="/testing">Тестирование сотрудников 
                      </NavDropdown.Item>
-                    <NavDropdown.Item href="/business">Бизнес Тренинги
+                    <NavDropdown.Item href="/sales">Увеличение продаж
                      </NavDropdown.Item>
-                  </NavDropdown> */}
+                  </NavDropdown>
 
                   <NavDropdown
                     title="Публикации"
@@ -220,12 +229,15 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
                   >
                     <NavDropdown.Item href="/promo">Система лояльности
                      </NavDropdown.Item>
-                    <NavDropdown.Item href="/publications">Блог & Новости
+                    <NavDropdown.Item href="/blog">Блог & Новости
                      </NavDropdown.Item>
                     <NavDropdown.Item href="/photos">Фото & Видео
                      </NavDropdown.Item>
                   </NavDropdown>
-                  <div className="navbar-nav mr-auto">
+                  <div className="navbar-nav ml-auto">
+                    <Nav.Link href="https://demo.alfacrm.pro/company/1/dashboard/index" className="nav-link text-success">Зайти в Кабинет</Nav.Link>
+                  </div>
+                  {/* <div className="navbar-nav mr-auto">
           
           {showModeratorBoard && (
             <Nav.Link href="/mod">Moderator Board</Nav.Link>
@@ -238,9 +250,9 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
           {currentUser && (
             <Nav.Link href="/user">Личный кабинет</Nav.Link>
           )}
-        </div>
+        </div> */}
 
-        {currentUser ? (
+        {/* {currentUser ? (
           <div className="navbar-nav ml-auto">
             <Nav.Link href="/profile">{currentUser.username}</Nav.Link>
             <Nav.Link href="/" onClick={handleClick}>Выйти</Nav.Link>
@@ -250,12 +262,11 @@ const Header = ({currentUser, showModeratorBoard, showAdminBoard, logOut}) => {
             <Nav.Link href="/login" className="nav-link text-success">Зайти</Nav.Link>
             <Nav.Link href="/register" className="nav-link text-success">Создать Аккаунт </Nav.Link>
           </div>
-        )}
+        )} */}
 
             </Nav>
             </Offcanvas.Body>
             </Navbar.Offcanvas>
-            
           </Container>
         </Navbar>
       ))}

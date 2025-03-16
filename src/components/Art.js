@@ -8,7 +8,7 @@ export default function Art() {
     <div>
     <section className="jarallax dark-mode bg-dark py-5" datajarallax dataspeed="0.6">
     <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-60"></div>
-    <div className="jarallax-img" style={{backgroundImage: 'url(assets/img/landing/corporate/arts.JPG'}}></div>
+    <div className="jarallax-img" style={{backgroundImage: 'url(assets/img/landing/corporate/lepkal.JPG'}}></div>
     <div className="container position-relative zindex-2 pt-5 pb-md-2 pb-lg-3 pb-xl-4 pb-xxl-5">
         <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
           <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i className="ai-home"></i></a>
@@ -21,9 +21,10 @@ export default function Art() {
       <p className="mb-0 lead text-white" 
     //   style={{maxWidth: "480px"}}
       >
-      Обучаем рисованию и лепке детей по авторской методике с 3 лет по авторской методике с элементами психологии.
-      <br/> Целью каждого занятия является не только заложить базовые знания по живописи, рисунку и композиции, но и научить ребенка мыслить образно, развить воображение и интерес к искусству, почувствовать радость от творческого процесса!
-        </p>
+      Обучаем рисованию и лепке детей по авторской методике с 5 лет по авторской методике с элементами психологии.
+      <br/> Целью каждого занятия является не только заложить базовые знания по живописи, рисунку и композиции,
+       но и научить ребенка мыслить образно, развить воображение и интерес к искусству, почувствовать радость от творческого процесса!
+      </p>
       {/* Features*/}
       <div className="d-none d-xxl-block" style={{height: "220px"}}></div>
       <div className="d-none d-lg-block d-xxl-none" style={{height: "160px"}}></div>
@@ -87,7 +88,7 @@ export default function Art() {
             <div className="pe-md-4 pe-xl-0">
               <h2 className="pb-2 pb-lg-3">
               Программа состоит из несколько ступеней:
-                </h2>
+              </h2>
               <ol className="fs-lg">
              <li>Занятия в формате мастер-классов, где дети пошагово повторяют за педагогом.</li> 
              <li>Ребенок знакомиться с правилами художника по определенной системе, чтобы ребенок мог повторить не пошагово, а через шаг.</li>
@@ -123,14 +124,14 @@ export default function Art() {
           </div>
         </div>
       
-        <div className="col pb-2">
-              <h4 className="mb-lg-4"> Подробности по Developskillsnow 
+        <div className="pb-2">
+              <h4 className="mb-lg-3"> Подробности о направлении и наличие мест уточняйте у администратора или Developskillsnow  
               {/* <a className="nav-link fs-lg p-0" href="mailto:developskillsnow@yandex.ru">developskillsnow@yandex.ru</a> */}
               {/* <p className="lead"> */}
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://vk.com/developskillsnow"><i className="ai-vk"> </i> </a> 
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://www.instagram.com/developskillsnow"><i className="ai-instagram"> </i> </a> 
               </h4>
-             <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46"> По телефону: +7 (992) 300-65-46</a>
+              <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46">Запись на продленку по телефонам: +7 (992) 300-65-46, +7 (992) 300-65-23</a>
             </div>
        
       </section>

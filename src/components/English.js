@@ -30,7 +30,7 @@ export default function English() {
       <div className="d-none d-xxl-block" style={{height: "220px"}}></div>
       <div className="d-none d-lg-block d-xxl-none" style={{height: "160px"}}></div>
       <div className="d-none d-md-block d-lg-none" style={{height: "100px"}}></div>
-      <div className="d-md-none" style={{height: "50px"}}></div>
+      <div className="d-md-none align-items-center" style={{height: "50px"}}></div>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-1 pb-md-3">
         <div className="col">
           <div className="d-flex align-items-center">
@@ -87,13 +87,9 @@ export default function English() {
           </div>
           <div className="col-md-6 col-xl-5 order-md-1">
             <div className="pe-md-4 pe-xl-0">
-              <h2 className=" pb-2 pb-lg-3">
-                 Для детей от 7 лет и подростков. <br/> Возможно обучение по вашей программе, подготовка к экзаменам.
-                </h2>
-              <p className="pb-2 pb-lg-0 mb-4 mb-lg-5 fs-lg">
-              Программа: Starlight, Click on, Headway, школьная программа или ваша на выбор. <br/>
-              Продолжительность: 72 занятия (сентябрь-май) <br/>
-              Интенсивность: 2 раза в неделю по 60 минут </p>
+              <h3 className="mb-0 pb-2 pb-lg-3">
+              Центр развития «Форматы» приглашает детей от 7 лет и подростков обучаться английскому языку. 
+              </h3>
               <div className="row row-cols-1">
                 <div className="col">
                   {/* <div className="d-table bg-secondary rounded-1 p-2 mb-3">
@@ -104,18 +100,27 @@ export default function English() {
                   <ol className="fs-lg mb-0">
                     <li>Возможность говорить с большим количеством людей</li>
                     <li>В детстве легче освоить иностранные языки</li>
+                    <li> Эффективное развитие познавательных способностей</li>
                     <li>Улучшение способностей детей на родном языке</li>
                     <li>Социальный опыт и повышение эмпатии</li>
                     <li>Развитие музыкального слуха у ребенка</li>
                     <li>Расширение детского кругозора</li>
                     <li>Развитие творческого мышления</li>
-                    <li>Расширение возможностей карьерного роста</li>
+                    <li>Расширение возможностей карьерного роста в перспективе</li>
                     <li>Предотвращение возрастного снижения познавательных способностей</li>
                     <li>Улучшение понимания других культур</li>
                     <li>Это весело!</li>
                   </ol>
                 </div> 
                 <p></p>
+                <h3 className="mb-0 pb-2 pb-lg-3 h5">Возможно обучение по вашей программе, подготовка к экзаменам.
+                </h3>
+              <p className="pb-2 pb-lg-0 mb-4 mb-lg-5 fs-lg">
+              Программа: Starlight, Click on, Headway, школьная программа или ваша на выбор. <br/>
+              Продолжительность: 72 занятия (сентябрь-май) <br/>
+              Интенсивность: 2 раза в неделю по 60 минут <br/>
+              Занятия проходят в разговорном формате с уникальными педагогами: уровень владения языком - С1, С2.
+              </p>
                 <div className="col">
                   {/* <div className="d-table bg-secondary rounded-1 p-2 mb-3">
                     <img className="d-block d-dark-mode-none m-1" src="assets/img/services/v3/icons/time-dark.svg" width="28" alt="Icon"/>
@@ -123,25 +128,27 @@ export default function English() {
                   </div> */}
                   <h3 className="h5 mb-2">Наши сильные преподаватели с Международной сертификацией: </h3>
                   <ul className="fs-lg mb-0">
-                    <li>Елена Леонидовна – уровень владения языком на уровне С1, С2 (Advanced, Proficiency), стаж 19 лет.</li>
-                    <li>Raymond - носитель языка, за границей преподавал в частной школе 3 года, в России преподает 4 года.</li>
+                    <li>Елена Леонидовна – уровень владения языком на уровне С1, С2 (Advanced, Proficiency), стаж 20 лет.</li>
+                    <li>Raymond - носитель языка, за границей преподавал в частной школе 3 года, в России преподает 5 лет.</li>
                   </ul>
                   <p></p>
-                  <h3 className="h5 mb-2"> Разговорный Клуб. Интерактивный английский, игры и квесты. </h3>
+                  <p className="fs-lg mb-2"> <strong className="h5">Разговорный Клуб по субботам.</strong> Интерактивный английский, игры и квесты. </p>
+                  <p></p>
+                  <p className="fs-lg mb-2"><strong className="h5">Первое занятие – бесплатно</strong> для проведения собеседования, определения уровня знаний, условий для освоения навыка и определения форматы работы. </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       
-        <div className="col pb-2">
-              <h4 className="mb-lg-4"> Подробности по Developskillsnow 
+        <div className="pb-2">
+              <h4 className="mb-lg-3"> Подробности о направлении и наличие мест уточняйте у администратора или Developskillsnow 
               {/* <a className="nav-link fs-lg p-0" href="mailto:developskillsnow@yandex.ru">developskillsnow@yandex.ru</a> */}
               {/* <p className="lead"> */}
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://vk.com/developskillsnow"><i className="ai-vk"> </i> </a> 
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://www.instagram.com/developskillsnow"><i className="ai-instagram"> </i> </a> 
               </h4>
-             <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46"> По телефону: +7 (992) 300-65-46</a>
+              <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46">Запись на продленку по телефонам: +7 (992) 300-65-46, +7 (992) 300-65-23</a>
             </div>
        
       </section>

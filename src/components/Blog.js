@@ -1,8 +1,12 @@
 import React from "react";
 // import UserService from "../services/user.service";
-import "./component.css"
+// import "./navbar.css"
 
 import june from '../img/1june.jpg'
+import masterv from '../img/masterv.jpeg'
+import onejune from '../img/1june24.jpeg'
+import june24 from '../img/profjune24.jpeg'
+import opend from '../img/foropen.jpeg'
 // import cert from '../img/certificates2.jpg'
 
 const Blog = () => {
@@ -19,11 +23,11 @@ const Blog = () => {
         </div>
         <div className="col-xl-2 offset-xl-1 col-lg-3 col-sm-5">
           <select className="form-select">
-            <option>All categories</option>
-            <option>Inspiration</option>
-            <option>Brand strategy</option>
-            <option>Advertisement</option>
-            <option>Ecommerce</option>
+            <option>Все категории</option>
+            <option>Детские Форматы</option>
+            <option>Рукоделие</option>
+            <option>Связаться с нами</option>
+            <option>Взрослые Форматы</option>
             <option>Travel &amp; Vacation</option>
           </select>
         </div>
@@ -38,9 +42,89 @@ const Blog = () => {
          </div>
 
       </div>
+      {/* <div className="text-center bg-size-cover bg-repeat-0">
+      <h2>Ближайшие события</h2>
+      </div> */}
       {/* Post*/}
-      
-      <article className="row g-0 border-0 mb-4">
+        <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+        <img className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" src={opend} alt="formats info"/>
+         <div className="col-sm-7 col-lg-8">
+          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+            <h3><a href="/">В нашем Центре развития «Форматы» 1 раз в квартал проходит День открытых дверей 
+            </a></h3>
+            <p className="d-sm-none d-md-block">
+            Такие как профессиональные мастер-классы, конкурсы, участие с родителями, сладкие подарки. Тематика и формат событий отличаются друг от друга!
+                <br/>Приходите и проведите день с пользой для себя и ребенка! 
+            <br/>Дополнительная информация по номеру: +7 (992) 300-65-46, + 7(992) 300-65-23 Адрес: ул.Попова, 7, стр.2 (вход с торца)
+            </p>
+            <div className="d-flex flex-wrap align-items-center mt-n2">
+              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">10<i className="ai-share fs-lg ms-1"></i></a>
+              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">4<i className="ai-message fs-lg ms-1"></i></a>
+              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <span className="fs-sm text-muted mt-2">12 hours ago</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <a className="badge text-nav fs-xs border mt-2" href="/contact">Связаться с нами</a></div>
+          </div>
+        </div>
+      </article>
+      {/* Post*/}
+      <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+        <img className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" src={masterv} alt="master class"/>
+         <div className="col-sm-7 col-lg-8">
+          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+            <h3><a href="/">Ежемесячно по выходным в нашем центре проводятся разные полезные авторские мастер-классы для детей и взрослых</a></h3>
+            <p className="d-sm-none d-md-block">
+              Направления: Рисование, Макраме, Вязание, Плетение бисером, Изготовление снудов и шапок из пуффи,  декупаж и не только. 
+              а также конкурсы, участие с родителями, сладкие подарки.
+                <br/> Тематика и формат событий отличаются друг от друга! Приходите и проведите день с пользой для себя и ребенка!
+            </p>
+            <div className="d-flex flex-wrap align-items-center mt-n2">
+              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">10<i className="ai-share fs-lg ms-1"></i></a>
+              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">4<i className="ai-message fs-lg ms-1"></i></a>
+              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <span className="fs-sm text-muted mt-2">12 hours ago</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <a className="badge text-nav fs-xs border mt-2" href="/class">Рукоделие</a></div>
+          </div>
+        </div>
+      </article>
+      {/* Post*/}
+      <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+        <img className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" src={onejune} alt="June"/>
+         <div className="col-sm-7 col-lg-8">
+          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+            <h3><a href="/">1 ИЮНЯ — Детский ПРАЗДНИК во дворе вместе с командой Форматы!</a></h3>
+            <p className="d-sm-none d-md-block">ФОРМАТЫ - это про ЛЮБОВЬ К РАЗВИТИЮ ДЕТЕЙ и ВЗРОСЛЫХ 💟 Время развлекаться пришло! 
+            <br/>Участвуй в локациях по выбору, получай отметки в КАРТЕ НАВИГАЦИИ и участвуй в РОЗЫГРЫШЕ призов от нас! Множество направлений как внутри так и снаружи центра для вас и ваших детей.
+            <br/> Участие бесплатно! Регистрация обязательна по телефону: 8(992)300-65-46, 8(992)300-65-23
+            </p>
+            <div className="d-flex flex-wrap align-items-center mt-n2">
+              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">10<i className="ai-share fs-lg ms-1"></i></a>
+              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">4<i className="ai-message fs-lg ms-1"></i></a>
+              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <span className="fs-sm text-muted mt-2">12 hours ago</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <a className="badge text-nav fs-xs border mt-2" href="/vacation">Детские Форматы</a></div>
+          </div>
+        </div>
+      </article>
+      {/* Post*/}
+      <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+        <img className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" src={june24} alt="June"/>
+         <div className="col-sm-7 col-lg-8">
+          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+            <h3><a href="/">Летняя Смена: Все профессии важны 17.06-28.06.2024 Тема: Профориентация.</a></h3>
+            <p className="d-sm-none d-md-block">
+            Были невероятные дни для детей возраста 7+ с полноценными обедами и программами.
+            </p>
+            <div className="d-flex flex-wrap align-items-center mt-n2">
+              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">10<i className="ai-share fs-lg ms-1"></i></a>
+              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">4<i className="ai-message fs-lg ms-1"></i></a>
+              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <span className="fs-sm text-muted mt-2">12 hours ago</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
+              <a className="badge text-nav fs-xs border mt-2" href="/vacation">Детские Форматы</a></div>
+          </div>
+        </div>
+      </article>
+            {/* Post*/}
+            <article className="row g-0 border-0 mb-4">
         <img className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" src={june} alt="June"/>
         <div className="col-sm-7 col-lg-8">
           <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
@@ -68,58 +152,10 @@ const Blog = () => {
               <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
               {/* <span className="fs-sm text-muted mt-2">8 hours ago</span>
               <span className="fs-xs opacity-20 mt-2 mx-3">|</span> */}
-              <a className="badge text-nav fs-xs border mt-2" href="/">Детские Форматы</a></div>
+              <a className="badge text-nav fs-xs border mt-2" href="/vacation">Детские Форматы</a></div>
           </div>
         </div>
       </article>
-      {/* Post*/}
-      {/* <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
-        <a className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="/" style={{backgroundImage: 'url(assets/img/blog/list/02.jpg)', minHeight: '16rem'}}></a>
-        <div className="col-sm-7 col-lg-8">
-          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
-            <h3><a href="/">Top books for inspiration</a></h3>
-            <p className="d-sm-none d-md-block">Sapien ultrices egestas at faucibus eu diam velit diam id amet nibh quam rutrum fermentum diam natoque scelerisque viverra molestie fames. Nulla fringilla arcu justo augue fringilla in nunc volutpat sit. Dui diam, faucibus vitae ultricies vitae mollis nunc elementum. Habitasse porta neque tempor tellus ut ...</p>
-            <div className="d-flex flex-wrap align-items-center mt-n2">
-              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">10<i className="ai-share fs-lg ms-1"></i></a>
-              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">4<i className="ai-message fs-lg ms-1"></i></a>
-              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
-              <span className="fs-sm text-muted mt-2">12 hours ago</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
-              <a className="badge text-nav fs-xs border mt-2" href="/">Books</a></div>
-          </div>
-        </div>
-      </article> */}
-      {/* Post*/}
-      {/* <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
-        <a className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="/" style={{backgroundImage: 'url(assets/img/blog/list/03.jpg)', minHeight: '16rem'}}></a>
-        <div className="col-sm-7 col-lg-8">
-          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
-            <h3><a href="blog-single-v3.html">Destinations to inspire and restore resources</a></h3>
-            <p className="d-sm-none d-md-block">Sapien ultrices egestas at faucibus eu diam velit diam id amet nibh quam rutrum diam fermentum diam natoque scelerisque viverra molestie fames. Aliquet donec cras amet orci in in neque ut sed diam quis consectetur purus lorem eu, sit. Aliquam eget arcu sed urna feugiat. In integer nisl at dui malesuada ...</p>
-            <div className="d-flex flex-wrap align-items-center mt-n2">
-              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">8<i className="ai-share fs-lg ms-1"></i></a>
-              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">5<i className="ai-message fs-lg ms-1"></i></a>
-              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
-              <span className="fs-sm text-muted mt-2">April 25, 2022</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
-              <a className="badge text-nav fs-xs border mt-2" href="/">Travel</a></div>
-          </div>
-        </div>
-      </article> */}
-      {/* Post*/}
-      {/* <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
-        <a className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="/" style={{backgroundImage: 'url(assets/img/blog/list/04.jpg)', minHeight: '16rem'}}></a>
-        <div className="col-sm-7 col-lg-8">
-          <div className="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
-            <h3><a href="blog-single-v1.html">Promotion of an online store from scratch, first sales</a></h3>
-            <p className="d-sm-none d-md-block">Pharetra in morbi quis is massa maecenas arcu vulputate pulvinar elit non nullage a, duis tortor mi massa ipsum in eu eu eget libero pulvinar elit vulputate. Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat tellus, at arcu, egestas praesent...</p>
-            <div className="d-flex flex-wrap align-items-center mt-n2">
-              <a className="nav-link text-muted fs-sm fw-normal p-0 mt-2 me-3" href="/">11<i className="ai-share fs-lg ms-1"></i></a>
-              <a className="nav-link text-muted fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="/">3<i className="ai-message fs-lg ms-1"></i></a>
-              <span className="fs-xs opacity-20 mt-2 mx-3">|</span>
-              <span className="fs-sm text-muted mt-2">May 12, 2022</span><span className="fs-xs opacity-20 mt-2 mx-3">|</span>
-              <a className="badge text-nav fs-xs border mt-2" href="/">Marketing</a></div>
-          </div>
-        </div>
-      </article> */}
       {/* Post*/}
       {/* <article className="row g-0 border-0 pt-3 pt-sm-0 mb-4">
         <a className="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="/" style={{backgroundImage: 'url(assets/img/blog/list/05.jpg)', minHeight: '16rem'}}></a>

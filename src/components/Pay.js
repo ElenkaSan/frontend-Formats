@@ -1,6 +1,6 @@
 import React from "react";
 // import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
-import "./component.css";
+// import "./navbar.css";
 import paycode from "../img/paycode.png"
 
 const Pay = () => {
@@ -11,7 +11,7 @@ const Pay = () => {
         <div className="d-lg-flex position-relative h-100" style={{ position: "relative" }}>
          <a className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="/" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i className="ai-home"></i></a>
         </div>
-        <h1 className="display-3 pb-2 mb-sm-4 mb-lg-5">Реквизиты компании и варианты оплаты:</h1>
+        <h1 className="display-4 pb-2 mb-sm-4 mb-lg-5">Реквизиты компании и варианты оплаты:</h1>
         <div className="container">
           <div className="row">
             <div className="col-md-6 p-5"> 

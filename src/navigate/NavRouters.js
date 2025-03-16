@@ -17,13 +17,15 @@ import Contact from "../components/Contact";
 import English from "../components/English";
 import Art from "../components/Art";
 import Chest from "../components/Chest";
+import Logoped from "../components/Logoped";
+import Afterschool from "../components/Afterschool";
 import Music from "../components/Music";
 import Prof from "../components/Prof";
 import Blog from "../components/Blog";
 import Pay from "../components/Pay";
 import Womenclub from "../components/Womenclub";
 import Niceage from "../components/Niceage"
-import Travel from "../components/Travel"
+// import Travel from "../components/Travel"
 import Manage from "../components/Manage"
 import Personal from "../components/Personal"
 import Family from "../components/Family"
@@ -31,9 +33,11 @@ import Family from "../components/Family"
 // import EventBus from "./common/EventBus";
 
 // import logo from './img/logo.png';
-import "../components/component.css"
+import "../components/navbar.css"
 import Englishadult from "../components/Englishadult";
-import Design from "../components/Design";
+import Team from "../components/Team";
+import Executive from "../components/Executive";
+// import Design from "../components/Design";
 
 // import Footer from "./components/Footer"
 
@@ -56,28 +60,30 @@ const NavRrouters = () => {
 
         <Route path="/english" element={<English />} />
         <Route path="/class" element={<Art />} />
+        <Route path="/logoped" element={<Logoped />} />
         <Route path="/chest" element={<Chest />} />
         <Route path="/music" element={<Music />} />
-        <Route path="/design" element={<Design />} />
+        {/* <Route path="/design" element={<Design />} /> */}
         <Route path="/prof" element={<Prof />} />
         <Route path="/vacation" element={<Vacation />} />
+        <Route path="/afterschool" element={<Afterschool />} />
 
         <Route path="/family" element={<Family />} />
         <Route path="/personal" element={<Personal />} />
         <Route path="/manage" element={<Manage />} />
         <Route path="/women" element={<Womenclub />} />
         <Route path="/niceage" element={<Niceage />} />
-        <Route path="/travel" element={<Travel />} />
+        {/* <Route path="/travel" element={<Travel />} /> */}
         <Route path="/englishadult" element={<Englishadult />} />
 
-        <Route path="/group" element={<Home />} />
-        <Route path="/team" element={<Home />} />
+        <Route path="/executive" element={<Executive />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/corporate" element={<Home />} />
         <Route path="/testing" element={<Home />} />
         <Route path="/business" element={<Home />} />
 
         <Route path="/promo" element={<Promo />} />
-        <Route path="/publications" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/photos" element={<Home />} />
       </Routes>
 

@@ -1,6 +1,7 @@
 import React from "react";
 // import UserService from "../services/user.service";
-import "./component.css"
+// import "./component.css"
+// import "./navbar.css"
 
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
