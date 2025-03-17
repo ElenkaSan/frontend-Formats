@@ -1,5 +1,4 @@
 import {React, useEffect, useRef } from 'react';
-// import UserService from "../services/user.service";
 import Parallax from 'parallax-js';
 
 import 'swiper/swiper-bundle.min.css';
@@ -29,10 +28,10 @@ export default function Executive() {
             <div className="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
               <div className="parallax me-lg-n4 me-xl-n5" style={{ maxWidth: '667px' }}>
               <div ref={sceneRef} className="container mt-4">
-                <div className="parallax-container position-relative" dataDepth="0.1"><img className="img-fluid custom-image shadow-lg" src={rub} alt="Rubleva Anna"/></div>
+                <div className="parallax-container position-relative" data-depth="0.1"><img className="img-fluid custom-image shadow-lg" src={rub} alt="Rubleva Anna"/></div>
              
                 {/* <div className="parallax-layer" data-depth="0.1"><img src="assets/img/landing/business-consulting/hero/01.png" alt="Layer"/></div> */}
-                <div className="parallax-layer stat-box" dataDepth="-0.25"><img src="assets/img/landing/business-consulting/hero/02.png" alt="Layer"/></div>
+                <div className="parallax-layer stat-box" data-depth="-0.25"><img src="assets/img/landing/business-consulting/hero/02.png" alt="Layer"/></div>
                 {/* <div className="parallax-layer" data-depth="0.25"><img src="assets/img/landing/business-consulting/hero/03.png" alt="Layer"/></div> */}
               </div>
               </div>

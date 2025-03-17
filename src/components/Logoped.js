@@ -90,14 +90,15 @@ export default function Logoped() {
             <h4 className="pb-2 pb-lg-3">
             Красивая связная речь формируется на основе таких понятий и навыков, как:
             </h4>
-              <ul className="fs-lg">
+            <ul className="fs-lg">
              <li>Речевая память</li>
              <li>Способность воспринимать звуки на слух и воспроизводить их</li>
              <li>Умение образовывать новые слова и правильно употреблять окончания</li>
              <li>Связывать слова в предложение</li>
              <li>Строить из предложений связные тексты, объединённые смыслом и логикой</li>
             </ul>
-             <p className="fs-lg">Польза от работы с логопедом велика для развития маленькой личности: вызов и развитие речи, артикуляционная гимнастика, нейропсихологические упражнения, развитие эмоционального интеллекта, высших психических процессов, фонематического слуха, развитие навыка коммуникации. Игры на фонетическое восприятие.</p>              <div className="row row-cols-1">
+             <p className="fs-lg">Польза от работы с логопедом велика для развития маленькой личности: вызов и развитие речи, артикуляционная гимнастика, нейропсихологические упражнения, развитие эмоционального интеллекта, высших психических процессов, фонематического слуха, развитие навыка коммуникации. Игры на фонетическое восприятие.</p>              
+             <div className="row row-cols-1">
                 <div className="col">
                   {/* <div className="d-table bg-secondary rounded-1 p-2 mb-3">
                   <img className="d-block d-dark-mode-none m-1" src="assets/img/services/v3/icons/monitor-dark.svg" width="28" alt="Icon"/>
@@ -134,7 +135,7 @@ export default function Logoped() {
               <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://www.instagram.com/developskillsnow"><i className="ai-instagram"> </i> </a> 
               </h4>
              <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46">Запись по телефонам: +7 (992) 300-65-46, +7 (992) 300-65-23</a>
-            </div>
+        </div>
        
       </section>
   </div>

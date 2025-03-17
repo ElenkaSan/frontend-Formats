@@ -8,3 +8,7 @@
 .stat-box img {
     height: 65%;
 }
+
+.overflow-hidden {
+    overflow: visible !important;
+  }

@@ -138,7 +138,7 @@ const Header = ({logOut}) => {
              />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
-              ariaLabelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
              
