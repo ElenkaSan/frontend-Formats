@@ -295,7 +295,7 @@
                  <div className="btn btn-icon btn-lg btn-outline-primary rounded-circle pe-none"><i className="ai-arrow-right"></i></div>
              </div></a></div>
          {/* Item*/}
-         <div className="col"><a className="card card-hover h-100 border-0 bg-secondary rounded-1 text-decoration-none overflow-hidden" href="/publications">
+         <div className="col"><a className="card card-hover h-100 border-0 bg-secondary rounded-1 text-decoration-none overflow-hidden" href="/blog">
              <div className="card-body d-flex align-items-end position-absolute top-0 start-0 w-100 h-100 opacity-0 bg-size-cover bg-position-center pb-4"  style={{backgroundImage: 'url(assets/img/landing/corporate/services/master.jpg)'}}>
                  <div className="btn btn-icon btn-lg btn-outline-light rounded-circle pe-none mb-3"><i className="ai-arrow-right"></i></div>
              </div>

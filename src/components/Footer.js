@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./component.css"
+// import "./navbar.css"
 
 class Footer extends React.Component {
 
@@ -30,7 +30,7 @@ class Footer extends React.Component {
            
                 {/* <a className="nav-link d-inline-block text-muted fs-sm text-decoration-none order-md-2 py-1 px-0 mb-3 mb-md-0" href="/">Все права принадлежат Мультиформатному Центру Развития "Форматы".</a> */}
               <p className="fs-sm order-md-1 mb-0">
-                <span className="opacity-70">&copy; All rights reserved by Development Center - Formats, 2022-2023. <br/> Made by </span>
+                <span className="opacity-70">&copy; All rights reserved by Development Center - Formats, 2022-2024. <br/> Made by </span>
               <a className="nav-link d-inline fw-normal p-0" href="https://github.com/ElenkaSan/" target="blank" rel="noopener">Elenka_San</a></p>
             </div>
           </div>

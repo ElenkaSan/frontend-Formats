@@ -29,7 +29,7 @@ export default function Womenclub() {
       <section className="container position-relative zindex-3" style={{marginTop: '-135px'}}>
         <div className="rounded-5 overflow-hidden"> 
           <div className="jarallax ratio ratio-16x9" datajarallax dataspeed="0.6">
-            <div className="jarallax-img" style={{backgroundImage: 'url(assets/img/landing/corporate/women.png)'}}></div>
+            <div className="jarallax-img" style={{backgroundImage: 'url(assets/img/landing/corporate/women.jpg)'}}></div>
           </div>
         </div>
         <div className="row pt-5 mt-n2 mt-sm-0 mt-md-2 mt-lg-4 mt-xl-5">

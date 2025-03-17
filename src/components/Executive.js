@@ -4,7 +4,7 @@ import Parallax from 'parallax-js';
 
 import 'swiper/swiper-bundle.min.css';
 
-import rub from "../img/executive.jpg";
+import rub from "../img/exuc.jpeg";
 import "./images.css";
 
 
