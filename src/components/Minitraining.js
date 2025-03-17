@@ -33,9 +33,11 @@ const Minitraining = () => {
           clickable: true,
           renderBullet: function (index, className) {
             const images = [
-              "/assets/img/landing/conference/hero/th01.jpg",
-              "/assets/img/landing/conference/hero/th02.jpg",
-              "/assets/img/landing/conference/hero/th03.jpg",
+              "/assets/img/landing/corporate/r01.jpg",
+              "/assets/img/landing/corporate/r02.jpg",
+              "/assets/img/landing/corporate/r03.jpg",
+              "/assets/img/landing/corporate/r04.jpg",
+              "/assets/img/landing/corporate/r05.jpg",
             ];
             return `<li class="${className} swiper-thumbnail swiper-pagination-bullet">
                       <img src="${images[index]}" alt="Thumbnail">
@@ -137,7 +139,7 @@ const Minitraining = () => {
 
 return (
   <div>
-    <section className="bg-dark dark-mode position-relative py-5">
+    <section className="position-relative py-5">
       <div 
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{ backgroundImage: 'url(assets/img/landing/conference/noise.png)', mixBlendMode: 'soft-light', opacity: '12%' }}
@@ -157,14 +159,14 @@ return (
                     className="position-relative overflow-hidden"
                     style={{ borderBottomLeftRadius: '50%', borderTopLeftRadius: '50%' }}
                   >
-                    <img src="assets/img/landing/conference/hero/01.jpg" alt="" />
+                    <img src="/assets/img/landing/corporate/r01.jpg" alt="Anna Rubleva" />
                     <div 
                       className="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100"
                       style={{ height: '215px', background: 'linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%)' }}
                     >
                       <div className="text-end pe-4 pb-4">
-                        <h3 className="h5 mb-1">Esther Howard</h3>
-                        <p className="fs-sm mb-0">VP of Strategy, Stretto Inc.</p>
+                        <h3 className="h4 mb-1 text-info">Рублева Анна Владимировна</h3>
+                        <p className="fs-sm mb-0 text-secondary">Руководитель Центра</p>
                       </div>
                     </div>
                   </div>
@@ -175,15 +177,11 @@ return (
                     className="position-relative overflow-hidden"
                     style={{ borderBottomLeftRadius: '50%', borderTopLeftRadius: '50%' }}
                   >
-                    <img src="assets/img/landing/conference/hero/02.jpg" alt="" />
+                    <img src="/assets/img/landing/corporate/r02.jpg" alt="" />
                     <div 
                       className="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100"
                       style={{ height: '215px', background: 'linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%)' }}
                     >
-                      <div className="text-end pe-4 pb-4">
-                        <h3 className="h5 mb-1">Albert Flores</h3>
-                        <p className="fs-sm mb-0">Product Manager, Google</p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -193,66 +191,82 @@ return (
                     className="position-relative overflow-hidden"
                     style={{ borderBottomLeftRadius: '50%', borderTopLeftRadius: '50%' }}
                   >
-                    <img src="assets/img/landing/conference/hero/03.jpg" alt="" />
+                    <img src="/assets/img/landing/corporate/r03.jpg" alt="Anna Rubleva" />
                     <div 
                       className="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100"
                       style={{ height: '215px', background: 'linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%)' }}
                     >
-                      <div className="text-end pe-4 pb-4">
-                        <h3 className="h5 mb-1">Kathryn Murphy</h3>
-                        <p className="fs-sm mb-0">VP of Marketing, Glassdoor</p>
-                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="swiper-slide">
+                  <div 
+                    className="position-relative overflow-hidden"
+                    style={{ borderBottomLeftRadius: '50%', borderTopLeftRadius: '50%' }}
+                  >
+                    <img src="/assets/img/landing/corporate/r04.jpg" alt="Anna Rubleva" />
+                    <div 
+                      className="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100"
+                      style={{ height: '215px', background: 'linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%)' }}
+                    >
+                    </div>
+                  </div>
+                </div>
+
+                <div className="swiper-slide">
+                  <div 
+                    className="position-relative overflow-hidden"
+                    style={{ borderBottomLeftRadius: '50%', borderTopLeftRadius: '50%' }}
+                  >
+                    <img src="/assets/img/landing/corporate/r05.jpg" alt="Anna Rubleva" />
+                    <div 
+                      className="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100"
+                      style={{ height: '215px', background: 'linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%)' }}
+                    >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
             <div className="swiper-thumbnails swiper-thumbnails-circle flex-nowrap justify-content-end pt-4" id="thumbnails"></div>
           </div>
-          
           <div className="col-sm-10 col-md-6 col-lg-5 order-md-1">
-            <h1 className="lead text-uppercase d-none d-lg-block pb-3">
-            Тестирование сотрудников
+            <h1 className="lead h1 d-none d-lg-block pb-3">Мини-тренинги с элементами коучинга
             </h1>
-            <p className="lead pb-2 pb-sm-3 pb-md-4 pb-xl-5 mb-xl-2">
-             действительно является важным аспектом управления персоналом, 
-      особенно когда речь идет о подборе команды, мотивировании работников и повышении эффективности их труда. 
-      Понимание индивидуальных особенностей каждого сотрудника помогает создать более продуктивную рабочую среду 
-      и улучшить результаты компании.
-            </p>
+            <ul className="list-unstyled fs-lg text-center text-lg-start pb-3 mx-auto mx-lg-0 mb-1" style={{ maxWidth: '620px' }}>
+                <p className="h4">Научат:</p>
+                <li className="mb-2">✔️ Разбираться в людях и самом себе.</li>
+                <li className="mb-2">✔️ Выстраивать личные продажи с точки зрения психологии личности.</li>
+                <li className="mb-2">✔️ Определять мотивы и ценности клиентов.</li>
+                <li className="mb-2">✔️ Грамотно аргументировать свое предложение.</li>
+                <li className="mb-2">✔️ Отрабатывать возражения клиентов разными техниками.</li>
+                <li className="mb-2">✔️ Проводить win=win переговоры.</li>
+                <li className="mb-2">✔️ Калибровке «да»/«нет» в переговорах.</li>
+                <li className="mb-2">✔️ Тактике и маневрам в переговорах.</li>
+                <li className="mb-2">✔️ Уметь создавать альтернативные предложения.</li>
+            </ul>
+            <p className="lead fs-lg m-0">Продолжительность: от 1 дня до 3 дней</p>
+            <p className="fs-lg position-relative mb-0">Стоимость: 10 000 рублей час (до 10 человек)</p>
+            <p className="fs-lg position-relative mb-0"> Есть возможность в формате конструктора собрать нужные темы в тренинг.</p>
+            <br/>  
+            <p className="fs-lg position-relative mb-0"><strong className="text-dark">ВНИМАНИЕ!</strong> Данные тренинги с элементами коучинга развивают МОТИВАЦИЮ И ПРИВЕРЖЕННОСТЬ сотрудников, тем самым способствуют вовлеченности и как следствие росту продаж.</p>
+         
           </div>
         </div>
+        <p className="fs-lg">Если вас заинтересовало данное предложение, рекомендую уточнить детали услуги, включая стоимость, сроки выполнения работ и возможные гарантии результата. Это позволит сделать осознанный выбор и принять решение о сотрудничестве с нами. </p>
+              
+              <div className="pb-2">
+                        <h4 className="mb-lg-3"> Подробности о направлении и наличие мест уточняйте у администратора или Developskillsnow 
+                        {/* <a className="nav-link fs-lg p-0" href="mailto:developskillsnow@yandex.ru">developskillsnow@yandex.ru</a> */}
+                        {/* <p className="lead"> */}
+                        <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://vk.com/developskillsnow"><i className="ai-vk"> </i> </a> 
+                        <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://www.instagram.com/developskillsnow"><i className="ai-instagram"> </i> </a> 
+                        </h4>
+                       <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46">По всем интересующим вопросам можно обратиться: +7 (992) 300-65-46, +7 (992) 300-65-23</a>
+              </div>
       </div>
     </section>
-
-    <h4 className="pb-2 pb-lg-3">Однако перед принятием решения о сотрудничестве с нами важно учитывать несколько факторов:</h4>
-    <ol className="fs-lg">
-             <li><strong className="text-dark">Цели тестирования:</strong> 
-             Определите, какие именно данные вы хотите получить от тестирования: оценка профессиональных навыков, личностные качества, уровень мотивации, стиль работы и т.д.</li>
-             <li><strong className="text-dark">Методы тестирования:</strong> 
-             Существуют различные методы оценки персонала, такие как психологические тесты, профессиональные задания, интервью, наблюдения и другие. Важно выбрать подходящие инструменты, соответствующие вашим целям.</li>
-             <li><strong className="text-dark">Конфиденциальность и этика:</strong>
-              Наше тестирование проводится с соблюдением конфиденциальности и этики, чтобы избежать возможных конфликтов и недопонимания среди сотрудников.</li>
-             <li><strong className="text-dark">Анализ результатов:</strong>
-             После проведения тестирования нашей компанией важно правильно  интерпретировать полученные данные и использовать их для принятия обоснованных решений относительно распределения обязанностей,</li>
-             <li><strong className="text-dark">Обратная связь:</strong> 
-              Предоставление обратной связи сотрудникам после тестирования поможет им лучше понять свои сильные и слабые стороны, а также определить пути для дальнейшего профессионального роста.</li>
-             <li><strong className="text-dark">Общий свод информации:</strong> 
-             Мы предоставляем общий анализ по команде/отделу для руководителя. Данная информация поможет более эффективно управлять своей командой.
-             </li>
-    </ol>
-    <p className="fs-lg">Если вас заинтересовало данное предложение, рекомендую уточнить детали услуги, включая стоимость, сроки выполнения работ и возможные гарантии результата. Это позволит сделать осознанный выбор и принять решение о сотрудничестве с нами. </p>
-              
-    <div className="pb-2">
-              <h4 className="mb-lg-3"> Подробности о направлении и наличие мест уточняйте у администратора или Developskillsnow 
-              {/* <a className="nav-link fs-lg p-0" href="mailto:developskillsnow@yandex.ru">developskillsnow@yandex.ru</a> */}
-              {/* <p className="lead"> */}
-              <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://vk.com/developskillsnow"><i className="ai-vk"> </i> </a> 
-              <a className="btn btn-icon btn-md btn-light btn-linkedin rounded-circle mx-2" href="https://www.instagram.com/developskillsnow"><i className="ai-instagram"> </i> </a> 
-              </h4>
-             <a className="nav-link fs-lg p-0" href="tel:+7 (992) 300-65-46">По всем интересующим вопросам можно обратиться: +7 (992) 300-65-46, +7 (992) 300-65-23</a>
-        </div>
   </div>
 );
 };

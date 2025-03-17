@@ -97,7 +97,12 @@ return (
                   <p className="fs-xl position-relative zindex-2 mb-0">Однако перед принятием решения о сотрудничестве с нами важно учитывать несколько факторов:
                   <span className="h4 text-warning m-1 ai-arrow-up-right"></span></p>
                 </div>
-                <div className="position-relative pt-4" style={{ maxWidth: '500px' }}>
+                <div className="d-lg-none mt-3">
+                  <p className="lead fs-xl"><strong className="text-dark">Задача</strong> - получать удовольствие от развития бизнеса и собственного развития.</p>
+                  <p className="fs-xl">Если вас заинтересовало данное предложение, рекомендую уточнить детали услуги, включая стоимость, сроки выполнения работ и возможные гарантии результата.</p>
+                  <a className="nav-link lead fs-lg" href="tel:+7(922)471-44-34">По всем интересующим вопросам можно обратиться: + 7(922)471-44-34</a>
+                </div>
+                <div className="position-relative pt-4 d-none d-lg-block" style={{ maxWidth: '500px' }}>
                   <p className="lead fs-xl position-relative zindex-2"><strong className="text-dark">Задача</strong> - получать удовольствие от развития бизнеса и собственного развития.</p>
                   <p className="fs-xl position-relative zindex-2 mb-0">Если вас заинтересовало данное предложение, рекомендую уточнить детали услуги, включая стоимость, сроки выполнения работ и возможные гарантии результата. Это позволит сделать осознанный выбор и принять решение о сотрудничестве с нами. </p>
               <br/>  
@@ -108,7 +113,7 @@ return (
 
             <div className="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
               <div className="ps-md-4 ps-lg-0">
-                <div className="position-relative d-flex justify-content-end my-4 py-0" data-aos="fade-left" data-aos-easing="ease-out-back">
+                <div className="position-relative d-flex justify-content-end mt-4 mb-1 py-0 ps-lg-0" data-aos="fade-left" data-aos-easing="ease-out-back">
                   <div className="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none">01</div>
                   <div className="card border-0 ps-3 m-1" style={{ width: 'calc(98% - 1.75rem)' }}>
                     <div className="card-body p-3">

@@ -219,6 +219,8 @@ const Header = ({logOut}) => {
                      </NavDropdown.Item>
                      <NavDropdown.Item href="/testing">Тестирование сотрудников 
                      </NavDropdown.Item>
+                     <NavDropdown.Item href="/motivation">Наставничество
+                     </NavDropdown.Item>
                     <NavDropdown.Item href="/sales">Увеличение продаж
                      </NavDropdown.Item>
                   </NavDropdown>

@@ -39,6 +39,7 @@ import Team from "../components/Team";
 import Executive from "../components/Executive";
 import Testing from "../components/Testing";
 import Minitraining from "../components/Minitraining";
+import Motivation from "../components/Motivation";
 // import Design from "../components/Design";
 
 // import Footer from "./components/Footer"
@@ -82,7 +83,8 @@ const NavRrouters = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/training" element={<Minitraining />} />
         <Route path="/testing" element={<Testing />} />
-        <Route path="/business" element={<Home />} />
+        <Route path="/motivation" element={<Motivation />} />
+        <Route path="/sales" element={<Home />} />
 
         <Route path="/promo" element={<Promo />} />
         <Route path="/blog" element={<Blog />} />

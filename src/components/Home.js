@@ -1,36 +1,40 @@
  // import React , { Component } from "react";
- import React, { useEffect, useState  } from 'react';
-
- import UserService from "../services/user.service";
- import kids from "../img/kids.png";
- import logoss from "../img/format.jpeg";
- import heart from "../img/heart.png";
- import arrow from "../img/arrow.png";
+import React, { useEffect, useState, useRef  } from 'react';
+  // import "./navbar.css"
+import { register } from 'swiper/element/bundle';
  
- import engTeach from "../img/englishT.jpg";
- import Anna from "../img/annaR.jpeg";
- import engTch from "../img/engTch.jpg"
+ 
+  // import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+  // import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.min.css';
+import "swiper/css/effect-creative";
+import "swiper/css/pagination";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import UserService from "../services/user.service";
+import kids from "../img/kids.png";
+import logoss from "../img/format.jpeg";
+import heart from "../img/heart.png";
+import arrow from "../img/arrow.png";
+ 
+import engTeach from "../img/englishT.jpg";
+import Anna from "../img/annaR.jpeg";
+import engTch from "../img/engTch.jpg"
  // import chest from "../img/chestT.jpg"
- import polina from "../img/polina.jpeg"
- import logoped from "../img/logoped.jpeg"
- import alex from "../img/alex.jpeg"
+import polina from "../img/polina.jpeg"
+import logoped from "../img/logoped.jpeg"
+import alex from "../img/alex.jpeg"
 
  // import mang from "../img/mang.png"
- import proforent from "../img/proforent.png"
- import create from "../img/crreate.JPG"
+import proforent from "../img/proforent.png"
+import create from "../img/crreate.JPG"
+  
+register();
  
- // import "./navbar.css"
- import { register } from 'swiper/element/bundle';
- 
- 
- // import { Swiper, SwiperSlide } from 'swiper/react';
- import 'swiper/swiper-bundle.min.css';
- // import { Container, Row, Col, Carousel } from 'react-bootstrap';
- import Swiper from 'swiper';
- 
- register();
- 
- const Home = () => {
+const Home = () => {
      const [content, setContent] = useState('');
      useEffect(() => {
          // Initialize Swiper
@@ -68,6 +72,14 @@
          );
        });
    }, []);
+
+    // const sceneRef = useRef(null); // Reference for the container
+   
+    //  useEffect(() => {
+    //    AOS.init({ duration: 1000 });
+    //    console.log("AOS Initialized"); // Debugging log
+    //    }, []);
+   
  
  // export default class Home extends Component {
  //   constructor(props) {
@@ -357,7 +369,7 @@
              <p className="text-center pb-2 pb-sm-3 fs-lg">Клиенты, которые стали нашими друзьями за этот год</p>
          <div className="row row-cols-3 row-cols-md-5 g-2 g-md-4 pb-2 pb-sm-3 pb-md-4 pb-xl-5">
          <div className="col">
-             <img className="d-block mx-auto" src="assets/img/brands/RSHB.png" width="220" alt="RCHB"/>
+             <img className="d-block mx-auto card" src="assets/img/brands/RSHB.png" width="220" alt="RCHB"/>
          </div>
          <div className="col">
              <img className="d-block mx-auto card" src="assets/img/brands/AgriBrasil.jpg" width="220" alt="AgriBrasil"/>
@@ -372,7 +384,7 @@
              <img className="d-block mx-auto card" src="assets/img/brands/SeaVew.jpg" width="200" alt="SeaVew"/>
          </div>
          <div className="col">
-             <img className="d-block mx-auto" src="assets/img/brands/philips.svg" width="220" alt="Philips"/>
+             <img className="d-block mx-auto card" src="assets/img/brands/philips.svg" width="220" alt="Philips"/>
          </div>
          <div className="col">
              <img className="d-block mx-auto bg-dark card" src="assets/img/brands/starcraft-light.svg" width="200" alt="Starcraft"/>
@@ -394,12 +406,12 @@
      <section className="bg-secondary py-5">
          <div className="container py-md-2 py-lg-4 my-xl-2 my-xxl-3">
          {/* Item*/}
-         <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" datadisableparallaxdown="md">
+         <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" data-aos="fade-up" data-aos-duration="600" data-aos-offset="280" datadisableparallaxdown="md">
              <div className="col-md-6 col-xxl-5 offset-lg-1 offset-xl-2 offset-xxl-3 order-md-2 pb-1 pb-sm-2 pb-md-0 mb-4 mb-md-0">
              <div className="position-relative">
                  <img className="d-block rounded-1" src="assets/img/landing/corporate/team/talant.jpeg" alt="Img"/>
                  <div className="d-none d-lg-block position-absolute top-0 end-0 translate-middle-y w-auto pe-1 me-4">
-                 <div dataos="fade-up" dataAosDuration="950" dataAosOffset="280">
+                 <div dataos="fade-up" data-aos-duration="950" data-aos-offset="280">
                      <svg className="text-info" width="107" height="107" viewBox="0 0 107 107" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <path d="M106.192 53.0468C106.225 63.5385 103.146 73.8042 97.3443 82.5459C91.5426 91.2875 83.279 98.1125 73.5985 102.158C63.918 106.203 53.2553 107.287 42.9589 105.272C32.6624 103.257 23.1946 98.2343 15.7528 90.8387C8.31094 83.4431 3.22928 74.0068 1.15039 63.7231C-0.92849 53.4394 0.0887821 42.7702 4.07357 33.0647C8.05836 23.3591 14.8317 15.0531 23.537 9.19711C32.2424 3.34107 42.4887 0.197979 52.9804 0.16529L53.1457 53.2121L106.192 53.0468Z"></path>
                      </svg>
@@ -407,7 +419,7 @@
                  </div>
              </div>
              </div>
-             <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" datadisableparallaxdown="md">
+             <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" data-aos="fade-up" data-aos-duration="800" data-aos-offset="180" datadisableparallaxdown="md">
              <div className="pe-md-4 pe-lg-0">
              <h3 className="pb-sm-2 pb-lg-3">Успех Центра развития «Форматы» основывается на личности.</h3>
                  {/* <p className="fs-xl pb-3 mb-1 mb-sm-2 mb-md-3 mb-lg-4"> */}
@@ -433,12 +445,12 @@
              </div>
          </div>
          {/* Item*/}
-         <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" datadisableparallaxdown="md">
+         <div className="row align-items-center py-3 py-sm-4 py-lg-5 mb-3 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" data-aos="fade-up" data-aos-duration="600" data-aos-offset="280" datadisableparallaxdown="md">
              <div className="col-md-6 col-xxl-5 offset-xl-1 offset-xxl-2 order-md-2 pb-1 pb-sm-2 pb-md-0 mb-4 mb-md-0">
              <div className="position-relative">
                  <img className="d-block rounded-1 position-relative zindex-2" src={proforent} alt="Img"/>
                  <div className="d-none d-lg-block position-absolute top-0 start-0 translate-middle-x w-auto pt-3 mt-5">
-                 <div dataAos="fade-up" dataAosDuration="950" dataAosOffset="280">
+                 <div data-aos="fade-up" data-aos-duration="950" data-aos-offset="280">
                      <svg className="text-primary" width="160" height="160" viewBox="0 0 160 160" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <circle cx="80" cy="80" r="80"></circle>
                      </svg>
@@ -446,7 +458,7 @@
                  </div>
              </div>
              </div>
-             <div className="col-md-6 col-xl-5 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" datadisableparallaxdown="md">
+             <div className="col-md-6 col-xl-5 order-md-1" data-aos="fade-up" data-aos-duration="800" data-aos-offset="180" datadisableparallaxdown="md">
              <div className="pe-md-4 pe-lg-0">
                  <h3 className="pb-sm-2 pb-lg-3">Наш профессиональный подход к вашему личностному росту</h3>
                  <div className="row row-cols-1 row-cols-sm-2 g-4">
@@ -465,12 +477,12 @@
              </div>
          </div>
          {/* Item*/}
-         <div className="row align-items-center py-3 py-sm-4 py-lg-5 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" dataAos="fade-up" dataAosDuration="600" dataAosOffset="280" datadisableparallaxdown="md">
+         <div className="row align-items-center py-3 py-sm-4 py-lg-5 my-sm-2 my-md-3 my-lg-0 my-xl-2 my-xxl-4" data-aos="fade-up" data-aos-duration="600" data-aos-offset="280" datadisableparallaxdown="md">
              <div className="col-md-6 col-xxl-5 offset-lg-1 offset-xl-2 offset-xxl-3 order-md-2 pb-1 pb-sm-2 pb-md-0 mb-4 mb-md-0">
              <div className="position-relative">
                  <img className="d-block rounded-1" src={create} alt="Img"/>
                  <div className="d-none d-lg-block position-absolute top-0 start-50 translate-middle w-auto ms-2">
-                 <div dataAos="fade-up" dataAosDuration="950" dataAosOffset="280">
+                 <div data-aos="fade-up" data-aos-duration="950" data-aos-offset="280">
                      <svg className="text-danger" width="108" height="111" viewBox="0 0 108 111" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <path d="M68.9244 1.23484C69.1072 0.713703 69.6783 0.438641 70.1961 0.630706C78.5792 3.74012 86.1086 8.79818 92.1601 15.3932C98.4371 22.2339 102.93 30.5171 105.241 39.5091C107.552 48.501 107.61 57.9241 105.41 66.9438C103.209 75.9634 98.8179 84.3011 92.6254 91.2184C86.4328 98.1356 78.6299 103.419 69.9078 106.6C61.1857 109.782 51.8136 110.763 42.6217 109.457C33.4298 108.151 24.7018 104.598 17.2109 99.1136C9.98911 93.8259 4.13195 86.8998 0.117483 78.9106C-0.130486 78.4171 0.079957 77.8191 0.577752 77.5799L21.7446 67.4094C22.2425 67.1702 22.8384 67.3807 23.0936 67.8705C25.2883 72.084 28.4252 75.7403 32.2656 78.5522C36.3752 81.5612 41.1634 83.5102 46.2062 84.2266C51.2489 84.943 56.3905 84.4048 61.1756 82.6595C65.9606 80.9142 70.2414 78.0157 73.6387 74.2208C77.0359 70.426 79.4449 65.8518 80.6522 60.9036C81.8594 55.9553 81.8277 50.7857 80.5598 45.8526C79.2919 40.9196 76.827 36.3753 73.3834 32.6224C70.1654 29.1154 66.1855 26.4006 61.7558 24.6837C61.2409 24.4841 60.9659 23.9149 61.1488 23.3938L68.9244 1.23484Z"></path>
                      </svg>
@@ -478,7 +490,7 @@
                  </div>
              </div>
              </div>
-             <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" dataAos="fade-up" dataAosDuration="800" dataAosOffset="180" datadisableparallaxdown="md">
+             <div className="col-md-6 col-lg-5 col-xl-4 order-md-1" data-aos="fade-up" data-aos-duration="800" data-aos-offset="180" datadisableparallaxdown="md">
              <div className="pe-md-4 pe-lg-0">
                  <h3 className="pb-sm-2 pb-lg-3">Полезная продлёнка от «Форматы»</h3>
                  <p className="mb-0 fs-lg">Мы предлагаем вашему вниманию дополнительную развивающую программу для вашего ребенка, а именно: </p>
@@ -532,8 +544,8 @@
                  data-bs-parent="#industries"
                >
                  <div className="accordion-body">
-                   Английский язык, Рисование/лепка, Шахматы, Логопед, Музыкальное
-                   направление, Профориентация, Полезные каникулы
+                   Английский язык, Рисование/лепка, Продленка, Логопед, Музыкальное
+                   направление, Профориентация, Полезные каникулы, Шахматы
                  </div>
                </div>
              </div>
@@ -581,8 +593,7 @@
                  data-bs-parent="#industries"
                >
                  <div className="accordion-body">
-                   Групповой Коуч, Командный Коуч, Корпоративный Коуч, Групповое
-                   Тестирование, Бизнес Тренинги
+                 Executive коучинг, Групповой Коуч, Бизнес Тренинги, Тестирование сотрудников, Увеличение продаж
                  </div>
                </div>
              </div>
@@ -599,22 +610,22 @@
    </div>
          {/* Shapes*/}
          <div className="d-none d-lg-flex align-items-end mt-xl-n5">
-         <div dataAos="zoom-in" datAosAnchorPlacement="bottom-bottom">
+         <div data-aos="zoom-in" datAosAnchorPlacement="bottom-bottom">
              <svg className="text-info" width="116" height="191" viewBox="0 0 116 191" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
              <path d="M58 191C90.0325 191 116 165.033 116 133L116 4C116 1.79086 114.209 7.8281e-08 112 1.74846e-07L60 2.44784e-06C26.8629 3.89631e-06 4.54735e-07 26.8629 1.9032e-06 60L5.09413e-06 133C6.49432e-06 165.033 25.9675 191 58 191Z"></path>
              </svg>
          </div>
-         <div dataAos="zoom-in" datAosAnchorPlacement="bottom-bottom" dataAosDelay="150">
+         <div data-aos="zoom-in" datAosAnchorPlacement="bottom-bottom" dataAosDelay="150">
              <svg className="text-warning" width="199" height="120" viewBox="0 0 199 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
              <rect width="199" height="120" rx="60"></rect>
              </svg>
          </div>
-         <div dataAos="zoom-in" datAosAnchorPlacement="bottom-bottom" dataAosDelay="300">
+         <div data-aos="zoom-in" datAosAnchorPlacement="bottom-bottom" dataAosDelay="300">
              <svg className="text-danger" width="169" height="169" viewBox="0 0 169 169" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
              <circle cx="84.5" cy="84.5" r="84.5"></circle>
              </svg>
          </div>
-         <div dataAos="zoom-in" datAosAnchorPlacement="bottom-bottom" dataAosDelay="450">
+         <div data-aos="zoom-in" datAosAnchorPlacement="bottom-bottom" dataAosDelay="450">
              <svg className="text-primary" width="169" height="169" viewBox="0 0 169 169" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
              <path d="M7.38722e-06 84.5C5.92617e-06 101.213 4.95585 117.55 14.2408 131.446C23.5258 145.342 36.7229 156.172 52.1633 162.568C67.6036 168.963 84.5937 170.637 100.985 167.376C117.377 164.116 132.433 156.068 144.251 144.251C156.068 132.433 164.116 117.377 167.376 100.985C170.637 84.5937 168.963 67.6036 162.568 52.1632C156.172 36.7229 145.342 23.5258 131.446 14.2408C117.55 4.95584 101.213 -5.92617e-06 84.5 -7.38722e-06L84.5 84.5L7.38722e-06 84.5Z"></path>
              </svg>
@@ -864,12 +875,12 @@
              <h2 className="display-2 d-none d-lg-block">Наша команда</h2>
              <h2 className="h1 d-lg-none text-center mb-0">Наша команда</h2>
              <div className="d-none d-lg-flex mt-auto mb-n3">
-             <div dataAos="fade-left" dataAosDuration="700" dataAosAnchorPlacement="bottom-bottom">
+             <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">
                  <svg className="text-info" width="169" height="169" viewBox="0 0 169 169" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                  <circle cx="84.5" cy="84.5" r="84.5"></circle>
                  </svg>
              </div>
-             <div dataAos="fade-right" dataAosDuration="700" dataAosAnchorPlacement="bottom-bottom">  
+             <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">  
                  <svg className="text-primary" width="169" height="169" viewBox="0 0 169 169" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                  <path d="M169 84.5C169 101.213 164.044 117.55 154.759 131.446C145.474 145.342 132.277 156.172 116.837 162.568C101.396 168.963 84.4063 170.637 68.0149 167.376C51.6235 164.116 36.567 156.068 24.7495 144.251C12.9319 132.433 4.88409 117.377 1.62364 100.985C-1.63681 84.5937 0.0365658 67.6036 6.43217 52.1632C12.8278 36.7229 23.6583 23.5258 37.5543 14.2408C51.4503 4.95583 67.7875 -6.12546e-06 84.5 -7.38722e-06L84.5 84.5L169 84.5Z"></path>
                  </svg>
@@ -879,7 +890,7 @@
          {/* <div className="position-relative">
                  <img className="d-block rounded-1 position-relative zindex-2" src="assets/img/landing/corporate/features/02.jpg" alt="Img"/>
                  <div className="d-none d-lg-block position-absolute top-0 start-0 translate-middle-x w-auto pt-3 mt-5">
-                 <div dataAos="fade-up" dataAosDuration="950" dataAosOffset="280">
+                 <div data-aos="fade-up" data-aos-duration="950" data-aos-offset="280">
                      <svg className="text-primary" width="160" height="160" viewBox="0 0 160 160" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <circle cx="80" cy="80" r="80"></circle>
                      </svg>
@@ -1054,12 +1065,12 @@
  
              <div className="text-center text-lg-start pt-4"><a className="btn btn-outline-dark" href="mailto:developskillsnow@yandex.ru">Подать заявку на работу</a></div>
              <div className="d-none d-lg-flex justify-content-end mt-n4 me-n4">
-                 <div dataAos="fade-left" dataAosDuration="700" dataAosAnchorPlacement="bottom-bottom">
+                 <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">
                  <svg className="text-danger" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <path d="M-2.51516e-06 58.5C-3.52666e-06 70.0702 3.43096 81.3806 9.85902 91.0008C16.2871 100.621 25.4235 108.119 36.113 112.547C46.8025 116.975 58.5649 118.133 69.9128 115.876C81.2607 113.619 91.6844 108.047 99.8657 99.8657C108.047 91.6844 113.619 81.2607 115.876 69.9128C118.133 58.5649 116.975 46.8025 112.547 36.113C108.119 25.4235 100.621 16.2871 91.0009 9.85903C81.3806 3.43096 70.0702 -4.24071e-06 58.5 -5.11423e-06L58.5 58.5L-2.51516e-06 58.5Z"></path>
                  </svg>
                  </div>
-                 <div dataAos="fade-right" dataAosDuration="700" dataAosAnchorPlacement="bottom-bottom">  
+                 <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">  
                  <svg className="text-info" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <circle cx="58.5" cy="58.5" r="58.5"></circle>
                  </svg>
