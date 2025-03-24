@@ -118,7 +118,7 @@ const Home = () => {
          {/* </header> */} {content}
          {/* <main className="page-wrapper"> */}
           <section className="jarallax min-vh-100 py-lg-3 py-xl-4 py-xxl-5" datajarallax dataspeed="0.65">
-         <div className="jarallax-img"  style={{backgroundImage: 'url(assets/img/landing/corporate/hero-bg.jpg)'}}></div>
+         <div className="jarallax-img"  style={{backgroundImage: 'url(assets/img/landing/corporate/hero-bg1.jpg)'}}></div>
          <div className="container-fluid position-relative zindex-2 py-5 my-md-3 my-lg-5">
          <div className="row pb-3 pt-4 pt-sm-5">
              <div className="col-md-9 col-lg-7 col-xl-6 col-xxl-5 offset-lg-1 pt-5">
