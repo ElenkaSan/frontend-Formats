@@ -122,8 +122,8 @@ const Home = () => {
          <div className="container-fluid position-relative zindex-2 py-5 my-md-3 my-lg-5">
          <div className="row pb-3 pt-4 pt-sm-5">
              <div className="col-md-9 col-lg-7 col-xl-6 col-xxl-5 offset-lg-1 pt-5">
-             <div className="card dark-mode border-0 rounded-1 py-2 py-sm-3 py-md-4 bg-primary" 
-             // style={{backgroundColor: '#004655'}}
+             <div className="card dark-mode border-0 rounded-1 py-2 py-sm-3 py-md-4 bg-primary "          
+             //  <div className="card dark-mode border-0 rounded-1 py-2 py-sm-3 py-md-4" style={{backgroundColor: 'rgba(0, 70, 85, 0.6)'}}  style={{backgroundColor: '#004655'}}
              >
                  <div className="card-body">
                  <div className="mx-auto pt-2" style={{maxWidth: '535px'}}>
