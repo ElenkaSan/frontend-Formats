@@ -73,12 +73,12 @@ const Home = () => {
        });
    }, []);
 
-    // const sceneRef = useRef(null); // Reference for the container
+    const sceneRef = useRef(null); // Reference for the container
    
-    //  useEffect(() => {
-    //    AOS.init({ duration: 1000 });
-    //    console.log("AOS Initialized"); // Debugging log
-    //    }, []);
+     useEffect(() => {
+       AOS.init({ duration: 1000 });
+       console.log("AOS Initialized"); // Debugging log
+       }, []);
    
  
  // export default class Home extends Component {
